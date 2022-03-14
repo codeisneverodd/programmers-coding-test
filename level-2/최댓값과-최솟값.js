@@ -1,6 +1,6 @@
 //https://github.com/codeisneverodd/programmers-coding-test
 //완벽한 정답이 아닙니다.
-//정답 1
+//정답 1 - codeisneverodd
 function solution(s) {
     var answer = '';
     const arr = s.split(' ')
@@ -8,10 +8,10 @@ function solution(s) {
     return answer;
 }
 
-//정답 2
+//정답 2 - codeisneverodd
 function solution(s) {
     var answer = '';
-    const arr = s.split(' ').map(x=>parseInt(x,10)).sort((a,b)=>a-b)
-    answer = arr[0] + ' ' + arr[arr.length-1]
+    const arr = s.split(' ').map(x => parseInt(x, 10)).sort((a, b) => a - b)
+    answer = arr[0] + ' ' + arr[arr.length - 1]
     return answer;
 }

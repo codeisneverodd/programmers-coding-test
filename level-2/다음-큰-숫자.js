@@ -1,24 +1,24 @@
 //https://github.com/codeisneverodd/programmers-coding-test
 //완벽한 정답이 아닙니다.
-//정답 1
+//정답 1 - codeisneverodd
 function solution(n) {
     let answer = n;
     const nCountOne = n.toString(2).match(/1/g).length
-    while(true){
+    while (true) {
         answer++
-        if(nCountOne === (answer).toString(2).match(/1/g).length) break
+        if (nCountOne === (answer).toString(2).match(/1/g).length) break
     }
     return answer;
 }
 
-//정답 2
+//정답 2 - codeisneverodd
 function solution(n) {
     var answer = 0;
     let find = false
     const nCountOne = countOne(n.toString(2))
     let counter = 1
-    while(!find){
-        if(nCountOne === countOne((n+counter).toString(2))){
+    while (!find) {
+        if (nCountOne === countOne((n + counter).toString(2))) {
             answer = n + counter
             find = true
         }
@@ -26,7 +26,8 @@ function solution(n) {
     }
     return answer;
 }
-const countOne = (str) =>{
+
+const countOne = (str) => {
     return str.split('').reduce((sum, currentChar) =>
         currentChar === '1' ? sum += 1 : sum, 0)
 }

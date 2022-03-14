@@ -1,16 +1,17 @@
 //https://github.com/codeisneverodd/programmers-coding-test
 //완벽한 정답이 아닙니다.
+//정답 1 - codeisneverodd
 function solution(expression) {
     var answer = 0;
-    const mathExp = ['*','+','-']
+    const mathExp = ['*', '+', '-']
     let priorityArr = Permutation(mathExp, 3)
     const calculated = []
-    for(const priority of priorityArr){
+    for (const priority of priorityArr) {
         const expressionArr = expression.split(/(\D)/)
-        for(const exp of priority){
-            while(expressionArr.includes(exp)){
-                const index =  expressionArr.indexOf(exp)
-                expressionArr.splice(index-1, 3, eval(expressionArr.slice(index-1,index+2).join('')))
+        for (const exp of priority) {
+            while (expressionArr.includes(exp)) {
+                const index = expressionArr.indexOf(exp)
+                expressionArr.splice(index - 1, 3, eval(expressionArr.slice(index - 1, index + 2).join('')))
             }
         }
         calculated.push(Math.abs(expressionArr[0]))

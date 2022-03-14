@@ -1,29 +1,30 @@
 //https://github.com/codeisneverodd/programmers-coding-test
 //완벽한 정답이 아닙니다.
-//정답 1
+//정답 1 - codeisneverodd
 function solution(left, right) {
     var answer = 0;
-    for(let num=left;num<=right;num++){
-        if(Number.isInteger(Math.sqrt(num))){
+    for (let num = left; num <= right; num++) {
+        if (Number.isInteger(Math.sqrt(num))) {
             answer -= num
-        }else{
+        } else {
             answer += num
         }
     }
     return answer;
 }
-//정답 2
+
+//정답 2 - codeisneverodd
 function solution(left, right) {
     var answer = 0;
-    for(let num=left; num<=right; num++){
+    for (let num = left; num <= right; num++) {
         divisorCounter(num) % 2 === 0 ? answer += num : answer -= num
     }
     return answer;
 }
 
-const divisorCounter = (num) =>{
+const divisorCounter = (num) => {
     let count = 0
     const sqrt = Math.sqrt(num)
-    for(let i=1; i<=sqrt; i++) if(num % i === 0) count += 1
-    return Number.isInteger(sqrt) ? (count-1)*2 + 1 : count * 2
+    for (let i = 1; i <= sqrt; i++) if (num % i === 0) count += 1
+    return Number.isInteger(sqrt) ? (count - 1) * 2 + 1 : count * 2
 }

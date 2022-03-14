@@ -1,5 +1,6 @@
 //https://github.com/codeisneverodd/programmers-coding-test
 //완벽한 정답이 아닙니다.
+//정답 1 - codeisneverodd
 function solution(str1, str2) {
     var answer = 0;
     let compare1 = verifiedSlices(str1), compare2 = verifiedSlices(str2)

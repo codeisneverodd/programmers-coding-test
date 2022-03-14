@@ -1,6 +1,6 @@
 //https://github.com/codeisneverodd/programmers-coding-test
 //완벽한 정답이 아닙니다.
-//정답 2
+//정답 1 - codeisneverodd
 function solution(new_id) {
     let answer = '';
     answer = new_id.toLowerCase() //step 1
@@ -20,7 +20,7 @@ function solution(new_id) {
     return answer
 }
 
-//정답 1
+//정답 2 - codeisneverodd
 function solution(new_id) {
     let answer = '';
     answer = new_id.toLowerCase()// step1
@@ -29,15 +29,15 @@ function solution(new_id) {
     const step4_1 = /^\./
     const step4_2 = /\.$/
     answer = answer.replace(step2, '')
-    answer = answer.replace(step3,'.')
+    answer = answer.replace(step3, '.')
     answer = answer.replace(step4_1, '')
-    answer = answer.replace(step4_2,'')
+    answer = answer.replace(step4_2, '')
     answer = answer === '' ? 'a' : answer // step5
-    answer = answer.length >= 16 ? answer.slice(0,15) : answer //step6
-    answer = answer.replace(step4_2,'')
-    switch (answer.length){ // step7
+    answer = answer.length >= 16 ? answer.slice(0, 15) : answer //step6
+    answer = answer.replace(step4_2, '')
+    switch (answer.length) { // step7
         case 1:
-            answer = answer + answer[0] +answer[0]
+            answer = answer + answer[0] + answer[0]
             break
         case 2:
             answer = answer + answer[1]
