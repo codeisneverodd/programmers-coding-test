@@ -2,7 +2,7 @@
 
 [![thumbnail-coding-test-no-id](https://user-images.githubusercontent.com/54318460/158709552-393edc15-68b0-41f6-ac6e-a981f2e0f1f5.png)](https://github.com/codeisneverodd/programmers-coding-test/)
 
-프로그래머스에 있는 [코딩테스트문제](https://programmers.co.kr/learn/challenges?tab=all_challenges) 를 Level 별로 모두 풀이한 답안입니다.
+프로그래머스에 있는 [코딩테스트문제](https://programmers.co.kr/learn/challenges?tab=all_challenges) 를 Level 별로 모두 풀이하고 있는 답안입니다.
 
 > 😁 **도움이 되셨다면** 오른쪽 상단 ↗ 의 ⭐️ **Star를 클릭**해 이 프로젝트를 응원해주세요!
 
