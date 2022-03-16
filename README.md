@@ -1,6 +1,6 @@
 # 프로그래머스 모든 문제 풀이
 
-![프로그래머스](https://tva1.sinaimg.cn/large/e6c9d24egy1gzfle2w529j20xc0hi0uk.jpg)
+[![thumbnail-coding-test-no-id](https://user-images.githubusercontent.com/54318460/158709552-393edc15-68b0-41f6-ac6e-a981f2e0f1f5.png)](https://github.com/codeisneverodd/programmers-coding-test/)
 
 프로그래머스에 있는 [코딩테스트문제](https://programmers.co.kr/learn/challenges?tab=all_challenges) 를 Level 별로 모두 풀이한 답안입니다.
 
