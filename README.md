@@ -1,6 +1,7 @@
 # 프로그래머스 모든 문제 풀이
 
-[![thumbnail-coding-test-no-id](https://user-images.githubusercontent.com/54318460/158709552-393edc15-68b0-41f6-ac6e-a981f2e0f1f5.png)](https://github.com/codeisneverodd/programmers-coding-test/)
+[![thumbnail-coding-test-no-id](https://user-images.githubusercontent.com/54318460/158711288-5fbd903f-d3b6-4d56-bd1f-9e5946d67d0a.png)
+](https://github.com/codeisneverodd/programmers-coding-test/)
 
 프로그래머스에 있는 [코딩테스트문제](https://programmers.co.kr/learn/challenges?tab=all_challenges) 를 Level 별로 모두 풀이하고 있는 답안입니다.
 
