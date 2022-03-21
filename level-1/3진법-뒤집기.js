@@ -25,3 +25,10 @@ const decimalToTernaryReversed = num => {
     ternary += num.toString()
     return ternary
 }
+
+//정답 3 - jaewon1676
+function solution(n) {
+    var answer = n.toString(3).split('').reverse().join('')
+
+    return parseInt(answer, 3)
+}
