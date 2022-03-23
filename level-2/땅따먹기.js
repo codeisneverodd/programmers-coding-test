@@ -17,3 +17,13 @@ function solution(land) {
 1. land의 행만큼 반복문을 돌린다.
 2. i행(두번째 행)부터 land.length - 1행(마지막 행)까지 본인 열을 제외한 나머지 열의 최댓값을 본인의 열에 더하여 누적한다.
 3. 마지막까지 다 구하면 마지막 행에서 최대값을 반환한다.*/
+
+//정답 2 - codeisneverodd
+function solution(land) {
+    for (let rowIndex = 1; rowIndex < land.length; rowIndex++) {
+        for (let colIndex = 0; colIndex < land[0].length; colIndex++) {
+            land[rowIndex][colIndex] += Math.max(...land[rowIndex - 1].slice(0, colIndex), ...land[rowIndex - 1].slice(colIndex + 1))
+        }
+    }
+    return Math.max(...land[land.length - 1])
+}
