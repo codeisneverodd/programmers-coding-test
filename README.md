@@ -5,14 +5,13 @@
 
 프로그래머스에 있는 [코딩테스트문제](https://programmers.co.kr/learn/challenges?tab=all_challenges) 를 Level 별로 모두 풀이하고 있는 답안입니다.
 
-> 😁 **도움이 되셨다면** 오른쪽 상단 ↗ 의 ⭐️ **Star를 클릭**해 이 프로젝트를 응원해주세요!
+## 😁 **도움이 되셨다면** 오른쪽 상단 ↗ 의 ⭐️ **Star를 클릭**해 이 프로젝트를 응원해주세요!
 
+## 풀이 현황
 풀이 완료로 표시된 Level의 폴더에 포함되지 않은 답안이 있다면
 
 - [Issues](https://github.com/codeisneverodd/programmers-coding-test/issues) 에 제보해주세요. `New issue`를 누르고 제목과 내용을
   적고 `Submit new issue`를 누르면 됩니다.
-
-## 풀이 현황
 
 ### Level 1 ✅
 
@@ -23,7 +22,7 @@
 ### Level 2 👨🏻‍💻(풀이 중..)
 
 - 전체 문제 수: 64문제
-- 풀이 문제 수: 40문제(2022.03.17)
+- 풀이 문제 수: 43문제(2022.03.23)
 - 풀이 완료 예상 시점: 2022년 3월 중
 
 ### Level 3
