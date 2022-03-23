@@ -5,3 +5,12 @@ function solution(arr) {
     var answer = arr.reduce((prev, current) => prev + current) / arr.length
     return answer;
 }
+
+//정답 2 - jaewon1676
+function solution(arr) {
+    var answer = 0;
+    for (var i = 0; i < arr.length; i++) {
+        answer += arr[i]
+    }
+    return answer / arr.length;
+}
