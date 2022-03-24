@@ -1,3 +1,6 @@
+//https://github.com/codeisneverodd/programmers-coding-test
+//완벽한 정답이 아닙니다.
+//정답 1 - codeisneverodd
 function solution(relation) {
     //1. 가능한 조합을 1개~Attribute개수 만큼 찾는다.
     //2. 해당 개수의 조합이 키가 될 수 있는지 검사하고, 가능하면 후보키에 추가한다.
