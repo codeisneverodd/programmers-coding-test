@@ -7,6 +7,7 @@ def count_files():
     files_info = []
     total_file_count = 0
     directory_list = [directory for directory in os.listdir("./") if "level" in directory]
+    directory_list.sort()
     for directory in directory_list:
         file_list = os.listdir(f"./{directory}")
         file_count = len(file_list) - 1
@@ -110,12 +111,12 @@ def make_read_me(files_info, total_file_count):
 ### Level 4
 
 - 풀이 문제 수: {files_info[3][1]}문제
-풀이 완료 예상 시점 : 예정 없음
+- 풀이 완료 예상 시점 : 예정 없음
 
 ### Level 5
 
 - 풀이 문제 수: {files_info[4][1]}문제
-풀이 완료 예상 시점: 예정 없음
+- 풀이 완료 예상 시점: 예정 없음
 
 ## 🙏🏻 아직 풀리지 않은 문제의 해답을 추가해 주세요!
 
