@@ -22,7 +22,7 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run: |
-        python -m pip install —upgrade pip
+        python -m pip install --upgrade pip
     - name: Run Update Python Script 
       run: |
         python utils/count_files.py
