@@ -14,3 +14,12 @@ const sortFunc = (a, b) => {
     const compareB = parseInt(b.toString() + a.toString())
     return compareB - compareA
 }
+
+
+// 정담 2 - createhb21
+function solution(numbers) {
+    let stringNum = 
+      numbers.map((el) => el + '').sort((a,b) => (b+a) - (a+b));
+  
+    return stringNum[0] === '0' ? '0' : stringNum.join('');
+}
