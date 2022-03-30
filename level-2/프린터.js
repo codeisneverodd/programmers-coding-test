@@ -67,7 +67,7 @@ function solution(priorities, location) {
 }
 
 
-// 정갑 4 - createhb21
+// 정답 4 - createhb21
 function solution(priorities, location) {
     var answer = priorities.map((priority, index) => {
       return {
