@@ -6,7 +6,7 @@ import os
 def count_files():
     files_info = []
     total_file_count = 0
-    directory_list = [directory for directory in os.listdir("./") if "LEVEL" in directory]
+    directory_list = [directory for directory in os.listdir("./") if "level" in directory]
     for directory in directory_list:
         file_list = os.listdir(f"./{directory}")
         file_count = len(file_list) - 1
