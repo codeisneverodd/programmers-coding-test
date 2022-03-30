@@ -66,7 +66,27 @@ function solution(priorities, location) {
     return answer
 }
 
-//정답 4 - codeisneverodd
+// 정답 4 - createhb21
+function solution(priorities, location) {
+    var answer = priorities.map((priority, index) => {
+      return {
+        index,
+        priority
+      };
+    });
+  
+    let queue = [];
+    
+    while(answer.length > 0){
+      const first = answer.shift();
+      const isPriority = answer.some((p) => p.priority > first.priority);
+      isPriority ? answer.push(first) : queue.push(first);
+    }
+    const idx = queue.findIndex(p => p.index === location) + 1;
+    return idx;
+  }  
+
+//정답 5 - codeisneverodd
 //shift를 사용하지 않고 queue를 구현한 풀이를 추가합니다.
 function solution(priorities, location) {
     let answer = 0;
