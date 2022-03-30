@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Self-Updating-Readme ]
   pull_request:
-    branches: [ main ]
+    branches: [ Self-Updating-Readme ]
 
 jobs:
   build:
