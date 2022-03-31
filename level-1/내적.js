@@ -6,3 +6,13 @@ function solution(a, b) {
     answer = a.reduce((x, y, i) => x + y * b[i], 0)
     return answer;
 }
+
+//정답 2 - yongchanson
+function solution(a, b) {
+    var answer = 0;
+
+    for(i=0; i<a.length; i++) {
+        answer += a[i] * b[i]
+    }
+    return answer;
+}
