@@ -6,3 +6,8 @@ function solution(s) {
     answer = parseInt(s)
     return answer;
 }
+
+//정답 2 - chaerin-dev
+function solution(s) {
+  return Number(s);
+}

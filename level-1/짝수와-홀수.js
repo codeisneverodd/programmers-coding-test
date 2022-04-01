@@ -5,3 +5,8 @@ function solution(num) {
     var answer = num % 2 === 0 ? "Even" : "Odd";
     return answer;
 }
+
+//정답 2 - chaerin-dev
+function solution(num) {
+  return num % 2 == 0 ? "Even" : "Odd";
+}
