@@ -28,3 +28,19 @@ const divisorCounter = (num) => {
     for (let i = 1; i <= sqrt; i++) if (num % i === 0) count += 1
     return Number.isInteger(sqrt) ? (count - 1) * 2 + 1 : count * 2
 }
+
+//정답 3 - jaewon1676
+function solution(left, right) {
+    var answer = 0;
+    
+    for (left; left<=right; left++){
+        // left의 제곱근이 정수면 약수의 개수는 홀수
+        if (Number.isInteger(Math.sqrt(left))){
+            answer -= left 
+        } else {
+            answer += left
+        }
+    }
+    return answer;
+}
+  //
