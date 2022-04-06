@@ -22,6 +22,7 @@ function solution(x) {
   }
   // x가 각 자릿수의 합으로 나누어떨어지는지 여부 반환
   return x % sum_of_digits == 0;
+<<<<<<< HEAD
 }
 
 //정답 3 - jaewon1676
@@ -35,3 +36,6 @@ function solution(x) {
 
 return (x % sum == 0) ? true : false; // 자릿수의 합으로 x가 나누어지면 하샤드 수
 }
+=======
+}
+>>>>>>> f3acd4e (Update 히샤드-수.js)
