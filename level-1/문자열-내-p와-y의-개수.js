@@ -9,3 +9,11 @@ function solution(s) {
 
     return answer;
 }
+
+//정답 2 - yongchanson
+function solution(s) {
+  p = s.toLowerCase().split("p").length;
+  y = s.toLowerCase().split("y").length;
+
+  return p == y ? true : false;
+}
