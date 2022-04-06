@@ -8,7 +8,7 @@ function solution(num) {
 
 //정답 2 - chaerin-dev
 function solution(num) {
-  return num % 2 == 0 ? "Even" : "Odd";
+    return num % 2 == 0 ? "Even" : "Odd";
 }
 
 //정답 3 - jaewon1676
