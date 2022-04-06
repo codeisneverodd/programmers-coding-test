@@ -4,16 +4,16 @@
 function solution(a, b) {
     var answer = 0;
     for (let i = Math.min(a, b); i <= Math.max(a, b); i++) {
-        answer += i
+        answer += i;
     }
     return answer;
 }
 
-//정답 2 - chaerin-dev
+//정답 2 - chagrin-dev
 function solution(a, b) {
-  let answer = 0;
-  for (let i = Math.min(a, b); i <= Math.max(a, b); i++) {
-    answer += i;
-  }
-  return answer;
+    let answer = 0;
+    for (let i = Math.min(a, b); i <= Math.max(a, b); i++) {
+        answer += i;
+    }
+    return answer;
 }
