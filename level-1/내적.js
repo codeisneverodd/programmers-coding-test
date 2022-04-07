@@ -3,7 +3,7 @@
 //정답 1 - codeisneverodd
 function solution(a, b) {
     var answer = 1234567890;
-    answer = a.reduce((x, y, i) => x + y * b[i], 0)
+    answer = a.reduce((x, y, i) => x + y * b[i], 0);
     return answer;
 }
 
@@ -11,8 +11,19 @@ function solution(a, b) {
 function solution(a, b) {
     var answer = 0;
 
-    for(i=0; i<a.length; i++) {
-        answer += a[i] * b[i]
+    for (i = 0; i < a.length; i++) {
+        answer += a[i] * b[i];
     }
+    return answer;
+}
+
+//정답 3 - prove-ability
+function solution(a, b) {
+    var answer = 0;
+
+    for (let i = 0, len = a.length; i < len; i++) {
+        answer += a[i] * b[i];
+    }
+
     return answer;
 }
