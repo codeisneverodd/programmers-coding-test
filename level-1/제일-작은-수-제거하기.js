@@ -45,3 +45,11 @@ function solution(arr) {
   arr.indexOf(1), 1이 있는 index가 3이므로 3 반환.
   arr.splice(3, 1) arr의 3번째 index만 제거 해준다.
   arr의 크기가 1보다 작으면 -1, 그렇지 않으면 그대로 반환. */
+
+//정답 4 - chaerin-dev
+function solution(arr) {
+  // arr에서 가장 최솟값의 위치를 찾아 해당 위치의 값을 삭제
+  arr.splice(arr.indexOf(Math.min(...arr)), 1);
+  // arr가 빈 배열이 아니면 arr를 반환, arr가 빈 배열이면 [-1]반환
+  return arr.length ? arr : [-1];
+}
