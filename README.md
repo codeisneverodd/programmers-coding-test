@@ -1,4 +1,5 @@
 # 프로그래머스 모든 문제 풀이
+[![방문자수](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/codeisneverodd/programmers-coding-test&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=방문자수(Today/Total)&edge_flat=true)](https://github.com/codeisneverodd)
 
 🌱 프로그래머스의 [코딩테스트 문제](https://programmers.co.kr/learn/challenges?tab=all_challenges)의 문제 풀이를 찾으실 수 있습니다.
 
@@ -97,6 +98,15 @@
 풀이 완료 예상 시점: 예정 없음
 
 ## 🙏🏻 아직 풀리지 않은 문제의 해답을 추가해 주세요!
+### 커밋 컨벤션
+| 접두어  | 작업 내용   |
+| ------- | -------------------------------------------------- |
+| Create  | 새로운 파일 생성 후 문제풀이 코드를 추가 할 경우   |
+| Add     | 기존 파일에 문제풀이 코드를 추가 할 경우           |
+| Update  | 파일의 기존 코드를 수정 할 경우                    |
+| Rename  | 파일 혹은 폴더명을 수정하거나 옮기는 작업만일 경우 |
+| Remove  | 파일을 삭제하는 작업만 수행한 경우                 |
+| Comment | 주석 추가 및 수정의 경우                           |
 
 ### 추가 방법
 
