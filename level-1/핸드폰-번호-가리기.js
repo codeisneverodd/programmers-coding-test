@@ -14,3 +14,11 @@ function solution(phone_number) {
   // 이어붙인 후 반환
   return "*".repeat(phone_number.length - 4) + phone_number.slice(-4);
 }
+
+// 정답 3 - prove-ability
+function solution(phone_number) {
+  var answer = '';
+  answer += "*".repeat(phone_number.length - 4)
+  answer += phone_number.slice(phone_number.length - 4, phone_number.length)
+  return answer;
+}
