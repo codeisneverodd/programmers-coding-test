@@ -11,3 +11,8 @@ function solution(s) {
 function solution(s) {
   return Number(s);
 }
+
+//정답 3 - prove-ability
+function solution(s) {
+  return parseInt(s, 10);
+}
