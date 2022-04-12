@@ -23,3 +23,12 @@ function solution(arr) {
   // sum을 arr의 요소의 갯수로 나눈 후 반환
   return sum / arr.length;
 }
+
+// 정답 4 - prove-ability
+function solution(arr) {
+    var answer = 0;
+    arr.forEach((num) => {
+        answer += num
+    })
+    return answer / arr.length;
+}
