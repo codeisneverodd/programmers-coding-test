@@ -25,3 +25,12 @@ function solution(n) {
   }
   return result;
 }
+
+// 정답 4 - prove-ability
+function solution(n) {
+    var answer = 0;
+    n.toString().split("").forEach((v) => {
+        answer += parseInt(v);
+    })
+    return answer;
+}

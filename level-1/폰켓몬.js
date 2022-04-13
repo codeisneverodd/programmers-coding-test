@@ -22,3 +22,18 @@ function solution(nums) {
   3. 최대로 고를 수 있는 폰켓몬 수는 N / 2마리가 set의 길이보다 크냐 작냐에 따라 
    두가지 경우의 수로 좁혀진다. */
   
+// 정답 3 - prove-ability
+function solution(nums) {
+    var answer = 0;
+    // set 을 사용해 중복 제거
+    const set = new Set();
+    nums.forEach((num) => {
+        set.add(num)
+    })
+    // set 의 사이즈가 N/2 보다 크다면 N/2 반환
+    // 그렇지 않다면 set size 반환
+    if(set.size > nums.length / 2) answer = nums.length / 2;
+    else answer = set.size;
+    
+    return answer;
+}
