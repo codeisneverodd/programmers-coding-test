@@ -30,3 +30,11 @@ function solution(s) {
   else answer = s[point];
   return answer;
 }
+
+// 정답 4 - chaerin-dev
+function solution(s) {
+  return s.length % 2
+    ? s[parseInt(s.length / 2)]
+    : s[s.length / 2 - 1] + s[s.length / 2];
+}
+
