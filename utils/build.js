@@ -1,11 +1,13 @@
-import * as fs from 'fs';
-import path from 'path';
-import { getTableStr, getInfoList } from './string.js';
+import * as fs from "fs";
+import path from "path";
+import { getTableStr, getInfoList } from "./string.js";
 
 const __dirname = path.resolve();
-const FILE_TO_UPDATE = path.resolve(__dirname, './README.md');
+const FILE_TO_UPDATE = path.resolve(__dirname, "./README.md");
 const updateData = `# 프로그래머스 모든 문제 풀이
 [![방문자수](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/codeisneverodd/programmers-coding-test&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=방문자수(Today/Total)&edge_flat=true)](https://github.com/codeisneverodd)
+
+🌱 Contributors
 
 🌱 프로그래머스의 [코딩테스트 문제](https://programmers.co.kr/learn/challenges?tab=all_challenges)의 문제 풀이를 찾으실 수 있습니다.
 
@@ -95,4 +97,4 @@ ${getTableStr(5)}
 를 명시하여야합니다.
 `;
 
-fs.writeFileSync(FILE_TO_UPDATE, updateData, 'utf-8');
+fs.writeFileSync(FILE_TO_UPDATE, updateData, "utf-8");
