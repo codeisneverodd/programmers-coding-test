@@ -17,7 +17,7 @@ const updateData = `# 프로그래머스 모든 문제 풀이
 
 ### 🧪 기능 구현
 
-| Contributors                                    | Contribute Lists            | About Me |
+| Main Contributors                                    | Contribute Lists            | About Me |
 | ----------------------------------------------- | --------------------------- | -------- |
 | [cruelladevil](https://github.com/cruelladevil) | - README 자동 업데이트 구현 | 🚧        |
 
