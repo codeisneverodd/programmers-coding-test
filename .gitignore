@@ -147,6 +147,4 @@ fabric.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,webstorm
 /references/
-/package.json
-/package-lock.json
 /node_modules/
