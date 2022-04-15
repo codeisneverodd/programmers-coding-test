@@ -5,9 +5,9 @@ name: update README.md
 
 on:
   push:
-    branches: [ main ]
+    branches: [ cruelladevil-readme-test ]
   pull_request:
-    branches: [ main ]
+    branches: [ cruelladevil-readme-test ]
 
 jobs:
   build:
