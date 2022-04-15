@@ -1,0 +1,23 @@
+{
+  "name": "programmers-coding-test",
+  "version": "1.0.0",
+  "description": "🌱 프로그래머스의 [코딩테스트 문제]",
+  "type": "module",
+  "scripts": {
+    "build": "node ./utils/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeisneverodd/programmers-coding-test.git"
+  },
+  "author": "cruelladevil <dev.timetravel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeisneverodd/programmers-coding-test/issues"
+  },
+  "homepage": "https://github.com/codeisneverodd/programmers-coding-test#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "node-fetch": "^3.2.3"
+  }
+}
