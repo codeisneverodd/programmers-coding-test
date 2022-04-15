@@ -1,13 +1,13 @@
 # 프로그래머스 모든 문제 풀이
+
 [![방문자수](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/codeisneverodd/programmers-coding-test&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=방문자수(Today/Total)&edge_flat=true)](https://github.com/codeisneverodd)
 
 🌱 프로그래머스의 [코딩테스트 문제](https://programmers.co.kr/learn/challenges?tab=all_challenges)의 문제 풀이를 찾으실 수 있습니다.
 
-🌱 모든 문제는 JavaScript로 풀이되며, 원하는 풀이는 아래에서 검색을 통해 찾으실 수 있습니다 
+🌱 모든 문제는 JavaScript로 풀이되며, 원하는 풀이는 아래에서 검색을 통해 찾으실 수 있습니다
 
 [![thumbnail-coding-test-no-id](https://user-images.githubusercontent.com/54318460/158711288-5fbd903f-d3b6-4d56-bd1f-9e5946d67d0a.png)
 ](https://github.com/codeisneverodd/programmers-coding-test/)
-
 
 ## 😁 **도움이 되셨다면** 오른쪽 상단 ↗ 의 ⭐️ **Star를 클릭**해 이 프로젝트를 응원해주세요!
 
@@ -170,7 +170,9 @@
 
 
 ## 🙏🏻 아직 풀리지 않은 문제의 해답을 추가해 주세요!
+
 ### 커밋 컨벤션
+
 | 접두어  | 작업 내용   |
 | ------- | -------------------------------------------------- |
 | Create  | 새로운 파일 생성 후 문제풀이 코드를 추가 할 경우   |
