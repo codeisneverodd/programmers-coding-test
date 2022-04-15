@@ -21,6 +21,8 @@ jobs:
       with:
         node-version: 16.14.0
         cache: 'npm'
+    - name: install package
+      run: npm install
     - name: build README.md
       run: npm run build
     - name: update README.md
