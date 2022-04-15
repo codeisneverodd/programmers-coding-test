@@ -22,3 +22,14 @@ function solution(n, m) {
   // 결과 출력
   return [gcd(n, m), lcm(n, m)];
 }
+
+//정답 3 - yongchanson
+function solution(a, b) {
+  let gcd = 0;
+  for (let i = 1; i <= Math.min(a, b); i++) {
+    if ((a % i) + (b % i) === 0) {
+      gcd = i;
+    }
+  }
+  return [gcd, (a / gcd) * b];
+}
