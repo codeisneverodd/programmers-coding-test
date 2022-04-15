@@ -19,23 +19,23 @@ const updateData = `# 프로그래머스 모든 문제 풀이
 
 | Contributors                                    | Contribute Lists            | About Me |
 | ----------------------------------------------- | --------------------------- | -------- |
-| [cruelladevil](https://github.com/cruelladevil) | - README 자동 업데이트 구현 |          |
+| [cruelladevil](https://github.com/cruelladevil) | - README 자동 업데이트 구현 | 🚧        |
 
 
 
 ### 🔥 문제 풀이
 
-| Main Contributors                                   | About Me |
-| --------------------------------------------------- | -------- |
-| [codeisneverodd](https://github.com/codeisneverodd) |          |
-| [chaerin-dev](https://github.com/chaerin-dev)       |          |
-| [jaewon1676](https://github.com/jaewon1676)         |          |
-| [prove-ability](https://github.com/prove-ability)   |          |
-| [yongchanson](https://github.com/yongchanson)       |          |
+| Main Contributors                                   | Commits | About Me |
+| --------------------------------------------------- | ------- | -------- |
+| [codeisneverodd](https://github.com/codeisneverodd) | 🚧       | 🚧        |
+| [chaerin-dev](https://github.com/chaerin-dev)       | 🚧       | 🚧        |
+| [jaewon1676](https://github.com/jaewon1676)         | 🚧       | 🚧        |
+| [prove-ability](https://github.com/prove-ability)   | 🚧       | 🚧        |
+| [yongchanson](https://github.com/yongchanson)       | 🚧       | 🚧        |
 
-| Contributors                                |
-| ------------------------------------------- |
-| [createhb21](https://github.com/createhb21) |
+| Contributors                                | Commits |
+| ------------------------------------------- | ------- |
+| [createhb21](https://github.com/createhb21) | 🚧       |
 
 ## 😁 **도움이 되셨다면** 오른쪽 상단 ↗ 의 ⭐️ **Star를 클릭**해 이 프로젝트를 응원해주세요!
 
