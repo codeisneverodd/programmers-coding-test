@@ -5,9 +5,9 @@ name: update README.md
 
 on:
   push:
-    branches: [ github-action ]
+    branches: [ main ]
   pull_request:
-    branches: [ github-action ]
+    branches: [ main ]
 
 jobs:
   build:
