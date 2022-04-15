@@ -32,3 +32,5 @@ function solution(strs, t) {
     ? -1
     : minCountToIndex[tLength - 1];
 }
+
+//리드미 테스트용 코멘트
