@@ -120,7 +120,7 @@
 ### Level 2 👨🏻‍💻(풀이 중..)
 
 - 전체 문제 수: 64문제
-- 풀이 문제 수: 45문제
+- 풀이 문제 수: 46문제
 - 풀이 완료 예상 시점: 2022년 4월 중
 
 | 번호 | 문제 출처 | 풀이 |
@@ -134,6 +134,9 @@
 | 7 | [[3차] n진수 게임](https://programmers.co.kr/learn/courses/30/lessons/17687) | [[3차]-n진수-게임.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/[3차]-n진수-게임.js) |
 | 8 | [[3차] 파일명 정렬](https://programmers.co.kr/learn/courses/30/lessons/17686) | [[3차]-파일명-정렬.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/[3차]-파일명-정렬.js) |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8ee3128 (Automatic Update README.md)
 | 9 | [n^2 배열 자르기](https://programmers.co.kr/learn/courses/30/lessons/87390) | [n^2-배열-자르기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/n^2-배열-자르기.js) |
 | 10 | [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) | [가장-큰-수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/가장-큰-수.js) |
 | 11 | [가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905) | [가장-큰-정사각형-찾기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/가장-큰-정사각형-찾기.js) |
@@ -172,6 +175,7 @@
 | 44 | [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485) | [행렬-테두리-회전하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/행렬-테두리-회전하기.js) |
 | 45 | [행렬의 곱셈](https://programmers.co.kr/learn/courses/30/lessons/12949) | [행렬의-곱셈.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/행렬의-곱셈.js) |
 | 46 | [후보키](https://programmers.co.kr/learn/courses/30/lessons/42890) | [후보키.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/후보키.js) |
+<<<<<<< HEAD
 =======
 |      | 문제 출처                                                    | 풀이                                                         |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -278,6 +282,8 @@
 | 44 | [행렬의 곱셈](https://programmers.co.kr/learn/courses/30/lessons/12949) | [행렬의-곱셈.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/행렬의-곱셈.js) |
 | 45 | [후보키](https://programmers.co.kr/learn/courses/30/lessons/42890) | [후보키.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/후보키.js) |
 >>>>>>> ae170ed (Automatic Update README.md)
+=======
+>>>>>>> 8ee3128 (Automatic Update README.md)
 
 ### Level 3 👨🏻‍💻(풀이 중..)
 
