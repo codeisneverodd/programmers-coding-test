@@ -24,7 +24,6 @@ function solution(arr) {
   return arr.filter((item, index) => item !== arr[index - 1]);
 }
 
-
 // 정답 4 - prove-ability
 function solution(arr) {
     let answer = [];
