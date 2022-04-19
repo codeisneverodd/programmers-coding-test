@@ -32,3 +32,8 @@ function solution(n) {
 
     return parseInt(answer, 3)
 }
+
+//정답 4 - prove-ability
+function solution(n) {
+    return parseInt(n.toString(3).split("").reverse().join(""), 3)
+}
