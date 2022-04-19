@@ -103,7 +103,7 @@
 ### Level 2 👨🏻‍💻(풀이 중..)
 
 - 전체 문제 수: 64문제
-- 풀이 문제 수: 45문제
+- 풀이 문제 수: 46문제
 - 풀이 완료 예상 시점: 2022년 4월 중
 
 | 번호 | 문제 출처 | 풀이 |
@@ -116,48 +116,49 @@
 | 6 | [[1차] 캐시](https://programmers.co.kr/learn/courses/30/lessons/17680) | [[1차]-캐시.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/[1차]-캐시.js) |
 | 7 | [[3차] n진수 게임](https://programmers.co.kr/learn/courses/30/lessons/17687) | [[3차]-n진수-게임.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/[3차]-n진수-게임.js) |
 | 8 | [[3차] 파일명 정렬](https://programmers.co.kr/learn/courses/30/lessons/17686) | [[3차]-파일명-정렬.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/[3차]-파일명-정렬.js) |
-| 9 | [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) | [가장-큰-수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/가장-큰-수.js) |
-| 10 | [가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905) | [가장-큰-정사각형-찾기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/가장-큰-정사각형-찾기.js) |
-| 11 | [거리두기 확인하기](https://programmers.co.kr/learn/courses/30/lessons/81302) | [거리두기-확인하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/거리두기-확인하기.js) |
-| 12 | [괄호 변환](https://programmers.co.kr/learn/courses/30/lessons/60058) | [괄호-변환.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/괄호-변환.js) |
-| 13 | [괄호 회전하기](https://programmers.co.kr/learn/courses/30/lessons/76502) | [괄호-회전하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/괄호-회전하기.js) |
-| 14 | [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885) | [구명보트.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/구명보트.js) |
-| 15 | [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586) | [기능개발.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/기능개발.js) |
-| 16 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | [다리를-지나는-트럭.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/다리를-지나는-트럭.js) |
-| 17 | [다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911) | [다음-큰-숫자.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/다음-큰-숫자.js) |
-| 18 | [땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913) | [땅따먹기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/땅따먹기.js) |
-| 19 | [멀쩡한 사각형](https://programmers.co.kr/learn/courses/30/lessons/62048) | [멀쩡한-사각형.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/멀쩡한-사각형.js) |
-| 20 | [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) | [메뉴-리뉴얼.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/메뉴-리뉴얼.js) |
-| 21 | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | [문자열-압축.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/문자열-압축.js) |
-| 22 | [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) | [삼각-달팽이.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/삼각-달팽이.js) |
-| 23 | [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839) | [소수-찾기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/소수-찾기.js) |
-| 24 | [수식 최대화](https://programmers.co.kr/learn/courses/30/lessons/67257) | [수식-최대화.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/수식-최대화.js) |
-| 25 | [숫자의 표현](https://programmers.co.kr/learn/courses/30/lessons/12924) | [숫자의-표현.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/숫자의-표현.js) |
-| 26 | [스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993) | [스킬트리.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/스킬트리.js) |
-| 27 | [영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981) | [영어-끝말잇기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/영어-끝말잇기.js) |
-| 28 | [예상 대진표](https://programmers.co.kr/learn/courses/30/lessons/12985) | [예상-대진표.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/예상-대진표.js) |
-| 29 | [오픈채팅방 ](https://programmers.co.kr/learn/courses/30/lessons/42888) | [오픈채팅방.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/오픈채팅방.js) |
-| 30 | [올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909) | [올바른-괄호.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/올바른-괄호.js) |
-| 31 | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) | [위장.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/위장.js) |
-| 32 | [점프와 순간 이동](https://programmers.co.kr/learn/courses/30/lessons/12980) | [점프와-순간-이동.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/점프와-순간-이동.js) |
-| 33 | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | [조이스틱.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/조이스틱.js) |
-| 34 | [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973) | [짝지어-제거하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/짝지어-제거하기.js) |
-| 35 | [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939) | [최댓값과-최솟값.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/최댓값과-최솟값.js) |
-| 36 | [최솟값 만들기](https://programmers.co.kr/learn/courses/30/lessons/12941) | [최솟값-만들기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/최솟값-만들기.js) |
-| 37 | [카펫](https://programmers.co.kr/learn/courses/30/lessons/42842) | [카펫.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/카펫.js) |
-| 38 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | [큰-수-만들기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/큰-수-만들기.js) |
-| 39 | [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | [타겟-넘버.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/타겟-넘버.js) |
-| 40 | [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065) | [튜플.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/튜플.js) |
-| 41 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | [프린터.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/프린터.js) |
-| 42 | [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945) | [피보나치-수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/피보나치-수.js) |
-| 43 | [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485) | [행렬-테두리-회전하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/행렬-테두리-회전하기.js) |
-| 44 | [행렬의 곱셈](https://programmers.co.kr/learn/courses/30/lessons/12949) | [행렬의-곱셈.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/행렬의-곱셈.js) |
-| 45 | [후보키](https://programmers.co.kr/learn/courses/30/lessons/42890) | [후보키.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/후보키.js) |
+| 9 | [n^2 배열 자르기](https://programmers.co.kr/learn/courses/30/lessons/87390) | [n^2-배열-자르기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/n^2-배열-자르기.js) |
+| 10 | [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) | [가장-큰-수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/가장-큰-수.js) |
+| 11 | [가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905) | [가장-큰-정사각형-찾기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/가장-큰-정사각형-찾기.js) |
+| 12 | [거리두기 확인하기](https://programmers.co.kr/learn/courses/30/lessons/81302) | [거리두기-확인하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/거리두기-확인하기.js) |
+| 13 | [괄호 변환](https://programmers.co.kr/learn/courses/30/lessons/60058) | [괄호-변환.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/괄호-변환.js) |
+| 14 | [괄호 회전하기](https://programmers.co.kr/learn/courses/30/lessons/76502) | [괄호-회전하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/괄호-회전하기.js) |
+| 15 | [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885) | [구명보트.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/구명보트.js) |
+| 16 | [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586) | [기능개발.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/기능개발.js) |
+| 17 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | [다리를-지나는-트럭.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/다리를-지나는-트럭.js) |
+| 18 | [다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911) | [다음-큰-숫자.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/다음-큰-숫자.js) |
+| 19 | [땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913) | [땅따먹기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/땅따먹기.js) |
+| 20 | [멀쩡한 사각형](https://programmers.co.kr/learn/courses/30/lessons/62048) | [멀쩡한-사각형.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/멀쩡한-사각형.js) |
+| 21 | [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) | [메뉴-리뉴얼.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/메뉴-리뉴얼.js) |
+| 22 | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | [문자열-압축.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/문자열-압축.js) |
+| 23 | [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) | [삼각-달팽이.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/삼각-달팽이.js) |
+| 24 | [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839) | [소수-찾기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/소수-찾기.js) |
+| 25 | [수식 최대화](https://programmers.co.kr/learn/courses/30/lessons/67257) | [수식-최대화.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/수식-최대화.js) |
+| 26 | [숫자의 표현](https://programmers.co.kr/learn/courses/30/lessons/12924) | [숫자의-표현.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/숫자의-표현.js) |
+| 27 | [스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993) | [스킬트리.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/스킬트리.js) |
+| 28 | [영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981) | [영어-끝말잇기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/영어-끝말잇기.js) |
+| 29 | [예상 대진표](https://programmers.co.kr/learn/courses/30/lessons/12985) | [예상-대진표.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/예상-대진표.js) |
+| 30 | [오픈채팅방 ](https://programmers.co.kr/learn/courses/30/lessons/42888) | [오픈채팅방.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/오픈채팅방.js) |
+| 31 | [올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909) | [올바른-괄호.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/올바른-괄호.js) |
+| 32 | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) | [위장.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/위장.js) |
+| 33 | [점프와 순간 이동](https://programmers.co.kr/learn/courses/30/lessons/12980) | [점프와-순간-이동.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/점프와-순간-이동.js) |
+| 34 | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | [조이스틱.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/조이스틱.js) |
+| 35 | [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973) | [짝지어-제거하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/짝지어-제거하기.js) |
+| 36 | [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939) | [최댓값과-최솟값.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/최댓값과-최솟값.js) |
+| 37 | [최솟값 만들기](https://programmers.co.kr/learn/courses/30/lessons/12941) | [최솟값-만들기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/최솟값-만들기.js) |
+| 38 | [카펫](https://programmers.co.kr/learn/courses/30/lessons/42842) | [카펫.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/카펫.js) |
+| 39 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | [큰-수-만들기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/큰-수-만들기.js) |
+| 40 | [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | [타겟-넘버.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/타겟-넘버.js) |
+| 41 | [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065) | [튜플.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/튜플.js) |
+| 42 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | [프린터.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/프린터.js) |
+| 43 | [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945) | [피보나치-수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/피보나치-수.js) |
+| 44 | [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485) | [행렬-테두리-회전하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/행렬-테두리-회전하기.js) |
+| 45 | [행렬의 곱셈](https://programmers.co.kr/learn/courses/30/lessons/12949) | [행렬의-곱셈.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/행렬의-곱셈.js) |
+| 46 | [후보키](https://programmers.co.kr/learn/courses/30/lessons/42890) | [후보키.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/후보키.js) |
 
 ### Level 3 👨🏻‍💻(풀이 중..)
 
 - 전체 문제 수: 52문제
-- 풀이 문제 수: 8문제
+- 풀이 문제 수: 9문제
 - 풀이 완료 예상 시점: 2022년 8월 중
 
 | 번호 | 문제 출처 | 풀이 |
@@ -166,10 +167,11 @@
 | 2 | [N-Queen](https://programmers.co.kr/learn/courses/30/lessons/12952) | [N-Queen.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/N-Queen.js) |
 | 3 | [가장 먼 노드](https://programmers.co.kr/learn/courses/30/lessons/49189) | [가장-먼-노드.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/가장-먼-노드.js) |
 | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | [네트워크.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/네트워크.js) |
-| 5 | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) | [베스트앨범.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/베스트앨범.js) |
-| 6 | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) | [여행경로.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/여행경로.js) |
-| 7 | [이중우선순위큐](https://programmers.co.kr/learn/courses/30/lessons/42628) | [이중우선순위큐.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/이중우선순위큐.js) |
-| 8 | [입국심사](https://programmers.co.kr/learn/courses/30/lessons/43238) | [입국심사.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/입국심사.js) |
+| 5 | [단속카메라](https://programmers.co.kr/learn/courses/30/lessons/42884) | [단속카메라.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/단속카메라.js) |
+| 6 | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) | [베스트앨범.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/베스트앨범.js) |
+| 7 | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) | [여행경로.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/여행경로.js) |
+| 8 | [이중우선순위큐](https://programmers.co.kr/learn/courses/30/lessons/42628) | [이중우선순위큐.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/이중우선순위큐.js) |
+| 9 | [입국심사](https://programmers.co.kr/learn/courses/30/lessons/43238) | [입국심사.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/입국심사.js) |
 
 ### Level 4
 
