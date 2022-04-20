@@ -46,7 +46,7 @@ function solution(num) {
   return num == 1 ? answer : -1
 }
 
-//정답 3 - prove-ability
+//정답 4 - prove-ability
 function solution(num) {
   let count = 0;
   
@@ -61,5 +61,15 @@ function solution(num) {
       if(count > 500) return -1
   }
   
+  return count;
+}
+
+//정답 5 - yongchanson
+function solution(num) {
+  let count = 0;
+  while (num !== 1) {
+    if (count++ === 500) return -1;
+    num = num % 2 ? num * 3 + 1 : num / 2;
+  }
   return count;
 }
