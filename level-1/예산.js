@@ -12,7 +12,7 @@ function solution(d, budget) {
     return answer;
 }
 
-// prove-ability
+//정답 2 - prove-ability
 function solution(d, budget) {
     let sum = 0;
     let count = 0;
