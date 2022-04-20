@@ -11,3 +11,8 @@ function solution(seoul) {
 function solution(seoul) {
   return `김서방은 ${seoul.indexOf("Kim")}에 있다`;
 }
+
+//정답 3 - prove-ability
+function solution(seoul) {
+  return `김서방은 ${seoul.findIndex(v => v === "Kim")}에 있다`;
+}

@@ -27,3 +27,10 @@ function solution(arr, divisor) {
   });
   return answer.length ? answer.sort((a, b) => a - b) : [-1];
 }
+
+//정답 4 - prove-ailbity
+function solution(arr, divisor) {
+  var answer = [];
+  arr.forEach((v) => v % divisor === 0 && answer.push(v))
+  return answer.length === 0 ? [-1] : answer.sort((a, b) => a - b);
+}
