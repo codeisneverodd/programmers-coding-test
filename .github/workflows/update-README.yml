@@ -28,9 +28,14 @@ jobs:
       run: npm install
     - name: build README.md
       run: npm run build
-    - name: update README.md
+    - name: get diff
+      id: get_diff
       run: |
-        git add .
+        git diff --quiet ./README.md || echo "::set-output name=new_changes_exist::true"
+    - name: update README.md
+      if: steps.get_diff.outputs.new_changes_exist == 'true'
+      run: |
+        git add ./README.md
         git config user.name github-actions
         git config user.email github-actions@github.com
         git commit -m "Automatic Update README.md"

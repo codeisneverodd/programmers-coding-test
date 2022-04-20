@@ -15,3 +15,12 @@ function solution(s) {
     answer = arr[0] + ' ' + arr[arr.length - 1]
     return answer;
 }
+
+//정답 3 - jaewon1676
+function solution(s) {
+    s = s.split(' ')
+    s.sort((a, b) => {return a - b}) // 오름차순 정렬
+    let small = s[0] // s의 최솟값
+    let large = s[s.length - 1] // s의 최댓값
+    return (small + ' ' + large)
+}
