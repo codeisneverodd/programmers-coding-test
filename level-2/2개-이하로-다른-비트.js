@@ -1,8 +1,8 @@
 //https://github.com/codeisneverodd/programmers-coding-test
 //완벽한 정답이 아닙니다.
 //정답 1 - le2sky
-function solution(n) {
-  let answer = [];
+function solution(numbers) {
+  const answer = [];
   numbers.forEach((num) => {
     if (num % 2 == 0) answer.push(num + 1);
     else {
