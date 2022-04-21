@@ -38,6 +38,8 @@ const updateData = `# 프로그래머스 모든 문제 풀이
 | Contributors                                | Commits |
 | ------------------------------------------- | ------- |
 | [createhb21](https://github.com/createhb21) | 🚧       |
+| [le2sky](https://github.com/le2sky) | 🚧       |
+
 
 
 ## Control + F 혹은 Cmd + F 를 통해 원하는 문제의 풀이를 찾아보세요!
