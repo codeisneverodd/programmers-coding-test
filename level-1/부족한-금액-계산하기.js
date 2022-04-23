@@ -47,3 +47,12 @@ function solution(price, money, count) {
   
   return sum < money ? 0 : sum - money;
 }
+
+//정답 4 - chaerin-dev
+function solution(price, money, count) {
+    let totalPrice = 0;
+    for(let i=1; i<=count; i++){
+        totalPrice += i * price;
+    }
+    return money > totalPrice ? 0 : totalPrice-money;
+}
