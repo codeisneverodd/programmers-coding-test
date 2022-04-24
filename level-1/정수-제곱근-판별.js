@@ -15,3 +15,13 @@ function solution(n) {
   // x가 정수이면 x+1의 제곱 반환, x가 정수가 아니면 -1 반환
   return Number.isInteger(x) ? Math.pow(x + 1, 2) : -1;
 }
+
+//정답 3 - prove-ability
+function solution(n) {
+  // n의 제곱근을 x 초기화
+  const x = Math.sqrt(n);
+  // 양의 정수라면 x + 1 제곱 반환
+  if(Number.isInteger(x)) return Math.pow(x + 1, 2)
+  // 아니라면 -1 반환
+  return -1;
+}
