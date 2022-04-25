@@ -15,6 +15,7 @@ const updateData = `# 프로그래머스 모든 문제 풀이
 
 [![thumbnail-coding-test-no-id](https://user-images.githubusercontent.com/54318460/158711288-5fbd903f-d3b6-4d56-bd1f-9e5946d67d0a.png)
 ](https://github.com/codeisneverodd/programmers-coding-test/)
+
 ## 🌟 Contributors
 
 ### 🧪 기능 구현
