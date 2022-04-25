@@ -1,13 +1,10 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(s) {
-    var answer = true;
-    const countP = [...s.matchAll(/p/gi)].length
-    const countY = [...s.matchAll(/y/gi)].length
-    if (countP !== countY) answer = false
-
-    return answer;
+  const countP = [...s.matchAll(/p/gi)].length;
+  const countY = [...s.matchAll(/y/gi)].length;
+  return countP === countY;
 }
 
 //정답 2 - yongchanson

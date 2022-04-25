@@ -1,15 +1,14 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverod
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(n) {
-    var answer = 0;
-    const answerArray = n
-        .toString()
-        .split("")
-        .sort((a, b) => b - a)
-        .join('')
-    answer = Number(answerArray)
-    return answer;
+  return parseInt(
+    n
+      .toString()
+      .split("")
+      .sort((a, b) => b - a)
+      .join("")
+  );
 }
 
 //정답 2 - chaerin-dev

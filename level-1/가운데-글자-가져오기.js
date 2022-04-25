@@ -1,11 +1,10 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(s) {
-    var answer = '';
-    const length = s.length
-    answer = (length % 2) !== 0 ? s[Math.floor(length / 2)] : s.slice((length / 2) - 1, (length / 2) + 1)
-    return answer;
+  return s.length % 2 !== 0
+    ? s[Math.floor(s.length / 2)]
+    : s.slice(s.length / 2 - 1, s.length / 2 + 1);
 }
 
 //정답 2 - yongchanson
@@ -21,11 +20,11 @@ function solution(s) {
 
 //정답 3 - prove-ability
 function solution(s) {
-  var answer = '';
+  var answer = "";
   // 중간 지점 찾기
   const point = Math.floor(s.length / 2);
-  // 짝수인 경우 - (중간지점 - 1) + 중간지점 
-  if(s.length % 2 ===0) answer = s[point - 1] + s[point];
+  // 짝수인 경우 - (중간지점 - 1) + 중간지점
+  if (s.length % 2 === 0) answer = s[point - 1] + s[point];
   // 홀수인 경우 - 중간지점
   else answer = s[point];
   return answer;

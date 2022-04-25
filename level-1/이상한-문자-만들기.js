@@ -1,16 +1,20 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(s) {
-    var answer = '';
-    answer = s.split(' ').map(word => {
-        let strangeWord = ''
-        for (let i = 0; i < word.length; i++) {
-            strangeWord += i % 2 === 0 ? word[i].toUpperCase() : word[i].toLowerCase()
-        }
-        return strangeWord
-    }).join(' ')
-    return answer;
+  return s
+    .split(" ")
+    .map((word) =>
+      word
+        .split("")
+        .map((char, index) =>
+          index % 2 === 0
+            ? word[index].toUpperCase()
+            : word[index].toLowerCase()
+        )
+        .join("")
+    )
+    .join(" ");
 }
 
 //정답 2 - chaerin-dev
@@ -34,8 +38,19 @@ function solution(s) {
 
 //정답 3 - jaewon1676
 function solution(s) {
-  return s.split(' ').map(el => el.split('').map((el, index) => index % 2 == 0 ? el.toUpperCase() : el.toLowerCase()).join('')).join(' ')
+  return s
+    .split(" ")
+    .map((el) =>
+      el
+        .split("")
+        .map((el, index) =>
+          index % 2 == 0 ? el.toUpperCase() : el.toLowerCase()
+        )
+        .join("")
+    )
+    .join(" ");
 }
+
 /* s.split(' ') // 띄어쓰기를 기준으로 나눕니다. [ 'try', 'hello', 'world' ]
   
 .map(el => el.split('')) 나눈것을 기준으로 요소 하나 하나씩 나눠줍니다 
