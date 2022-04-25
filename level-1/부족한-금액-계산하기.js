@@ -1,12 +1,10 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(price, money, count) {
-    var answer = -1;
-    let totalCost = 0
-    for (let i = 1; i <= count; i++) totalCost += price * i
-    answer = totalCost <= money ? 0 : totalCost - money
-    return answer;
+  let totalCost = 0;
+  for (let i = 1; i <= count; i++) totalCost += price * i;
+  return totalCost <= money ? 0 : totalCost - money;
 }
 
 //정답 2 - yongchanson
@@ -28,17 +26,17 @@ function solution(price, money, count) {
 
 //정답 3 - jaewon1676
 function solution(price, money, count) {
-  let sum_price = 0; // 놀이기구의 이용료의 합 
-  for (let i = 1; i <= count; i++){
-      sum_price += i * price // 이용료의 N배 만큼 곱해서 더해준다.
+  let sum_price = 0; // 놀이기구의 이용료의 합
+  for (let i = 1; i <= count; i++) {
+    sum_price += i * price; // 이용료의 N배 만큼 곱해서 더해준다.
   }
-  if (sum_price <= money){
-      return 0;
+  if (sum_price <= money) {
+    return 0;
   }
   return sum_price - money;
 }
 
-//정답 3 - prove-ability
+//정답 4 - prove-ability
 function solution(price, money, count) {
   let sum = 0;
   for(let i = 1; i <= count; i++) {
@@ -48,7 +46,7 @@ function solution(price, money, count) {
   return sum < money ? 0 : sum - money;
 }
 
-//정답 4 - chaerin-dev
+//정답 5 - chaerin-dev
 function solution(price, money, count) {
     let totalPrice = 0;
     for(let i=1; i<=count; i++){
@@ -56,3 +54,4 @@ function solution(price, money, count) {
     }
     return money > totalPrice ? 0 : totalPrice-money;
 }
+

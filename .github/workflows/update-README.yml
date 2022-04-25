@@ -28,6 +28,9 @@ jobs:
       run: npm install
     - name: build README.md
       run: npm run build
+    - name: update README.md
+      run: |
+        git add .
     - name: get diff
       id: get_diff
       run: |

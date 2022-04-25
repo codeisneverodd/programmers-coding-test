@@ -1,17 +1,15 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(n, m) {
-    var answer = []
-    const gcd = greatestCommonDivisor(n, m)
-    answer.push(gcd, n * m / gcd)
-    return answer
+  const gcd = greatestCommonDivisor(n, m);
+  return [gcd, (n * m) / gcd];
 }
 
 const greatestCommonDivisor = (a, b) => {
-    if (b === 0) return a
-    else return greatestCommonDivisor(b, a % b)
-}
+  if (b === 0) return a;
+  else return greatestCommonDivisor(b, a % b);
+};
 
 //정답 2 - chaerin-dev
 function solution(n, m) {
