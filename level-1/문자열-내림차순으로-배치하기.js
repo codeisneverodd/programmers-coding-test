@@ -11,3 +11,15 @@ function solution(s) {
     })
     .join("");
 }
+
+//정답 2 - chaerin-dev
+function solution(s) {
+  // 문자열 -> 배열 -> 정렬 -> 순서뒤집기 -> 문자열
+  return s.split("").sort().reverse().join("");
+}
+
+//정답3 - chaerin-dev
+function solution(s) {
+  return s.split("").sort((a, b) => (a < b ? 1 : -1)).join("");
+}
+
