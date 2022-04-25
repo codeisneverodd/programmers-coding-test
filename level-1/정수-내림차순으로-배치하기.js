@@ -20,3 +20,9 @@ function solution(n) {
   // 배열 -> 문자열 -> 정수
   return parseInt(arrN.join(""));
 }
+
+//정답 3 - prove-ability
+function solution(n) {
+  return parseInt(n.toString().split("").sort((a, b) => b - a).join(""), 10);
+}
+

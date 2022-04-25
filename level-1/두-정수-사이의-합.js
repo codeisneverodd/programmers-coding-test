@@ -17,3 +17,17 @@ function solution(a, b) {
   }
   return answer;
 }
+
+//정답 3 - prove-ability
+function solution(a, b) {
+  let answer = 0;
+  for(let i = Math.min(a, b), len = Math.max(a, b); i <= len; i++) {
+      answer += i;
+  }
+  return answer;
+}
+
+//정답 4 - prove-ability
+function solution(a, b) {
+  return Array.from({length: Math.max(a, b) - Math.min(a, b) + 1}, (_, i) => i + Math.min(a, b)).reduce((a, b) => a + b, 0);
+}

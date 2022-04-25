@@ -70,3 +70,18 @@ function solution(s) {
 대, 소문자 변환, split, reverse, join, map 등등을 활용 해야 하므로  
 문자열을 연습하는데 좋은 문제입니다.
 */
+
+
+//정답 4 - prove-ability
+function solution(s) {
+  let answer = '';
+  s.split(" ").forEach((word) => {
+      for(let i = 0, len = word.length; i < len; i++) {
+          if(i % 2 === 0) answer+=word[i].toUpperCase();
+          else answer+=word[i].toLowerCase();
+      }
+      answer += " ";
+  })
+  answer = answer.slice(0, answer.length - 1)
+  return answer;
+}

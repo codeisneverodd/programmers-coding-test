@@ -56,3 +56,14 @@ function solution(n) {
 // 약수란 어떤 수를 나누었을 때 나머지 없이 나누어 떨어지게 하는 그 수입니다.
 // 10을 예로 들면, 10은 1, 2, 5, 10 이 나누었을 때 나머지가 없으므로 약수입니다.
 // 3, 4, 6, 7, 8, 9 는 나누었을 때 나머지가 남기때문에 약수가 아닙니다.
+
+
+//정답 4 - prove-ability
+function solution(n) {
+  let answer = 0;
+  for(let i = 1; i <= n; i++) {
+      if(n % i === 0) answer += i;
+  }
+  return answer;
+}
+

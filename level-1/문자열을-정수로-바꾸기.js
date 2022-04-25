@@ -14,3 +14,9 @@ function solution(s) {
 function solution(s) {
   return parseInt(s, 10);
 }
+
+
+//정답 4 - jaewon1676
+function solution(s) {
+  return parseInt(s);
+}
