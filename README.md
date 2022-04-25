@@ -102,7 +102,7 @@
 | 52   | [폰켓몬](https://programmers.co.kr/learn/courses/30/lessons/1845) | [폰켓몬.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/폰켓몬.js) |
 | 53   | [핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948) | [핸드폰-번호-가리기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/핸드폰-번호-가리기.js) |
 | 54   | [행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950) | [행렬의-덧셈.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/행렬의-덧셈.js) |
-| 55   | [하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947) | [하샤드-수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/히샤드-수.js) |
+| 55   | [하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947) | [하샤드-수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/하샤드-수.js) |
 
 ### Level 2 👨🏻‍💻(풀이 중..)
 
