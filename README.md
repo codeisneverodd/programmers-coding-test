@@ -9,7 +9,7 @@
 [![thumbnail-coding-test-no-id](https://user-images.githubusercontent.com/54318460/158711288-5fbd903f-d3b6-4d56-bd1f-9e5946d67d0a.png)
 ](https://github.com/codeisneverodd/programmers-coding-test/)
 
-=======
+
 ## 🌟 Contributors
 
 ### 🧪 기능 구현
@@ -113,7 +113,7 @@
 - 풀이 문제 수: 46문제(2022.04.14)
 - 풀이 완료 예상 시점: 2022년 4월 중
 
-=======
+
 - 풀이 문제 수: 47문제
 - 풀이 완료 예상 시점: 2022년 4월 중
 
