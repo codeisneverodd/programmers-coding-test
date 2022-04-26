@@ -1,10 +1,12 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(n) {
-    var answer = 0;
-    for (let divisor = 1; divisor <= n; divisor++) if (n % divisor === 0) answer += divisor
-    return answer;
+  let answer = 0;
+  for (let divisor = 1; divisor <= n; divisor++) {
+    if (n % divisor === 0) answer += divisor;
+  }
+  return answer;
 }
 
 //정답 2 - yongchanson
@@ -42,16 +44,19 @@ function solution(n) {
 //정답 4 - jaewon1676
 function solution(n) {
   var answer = 0;
-  for (let i=1; i<=n; i++){
-      if (n%i == 0){ // n으로 i를 나눴을 때, 나머지가 0이면 약수이다.
-          answer += i
-      }
+  for (let i = 1; i <= n; i++) {
+    if (n % i == 0) {
+      // n으로 i를 나눴을 때, 나머지가 0이면 약수이다.
+      answer += i;
+    }
   }
   return answer;
 }
+
 // 약수란 어떤 수를 나누었을 때 나머지 없이 나누어 떨어지게 하는 그 수입니다.
 // 10을 예로 들면, 10은 1, 2, 5, 10 이 나누었을 때 나머지가 없으므로 약수입니다.
 // 3, 4, 6, 7, 8, 9 는 나누었을 때 나머지가 남기때문에 약수가 아닙니다.
+
 
 //정답 4 - prove-ability
 function solution(n) {
@@ -61,3 +66,4 @@ function solution(n) {
   }
   return answer;
 }
+

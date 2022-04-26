@@ -1,45 +1,46 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverod
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(absolutes, signs) {
-    var answer = 123456789;
-    answer = absolutes.reduce((a, b, i) => a + b * (signs[i] ? 1 : -1), 0);
-    return answer;
+  return absolutes.reduce(
+    (acc, curr, i) => acc + curr * (signs[i] ? 1 : -1),
+    0
+  );
 }
 
 //정답 2 - codeisneverod
 function solution(absolutes, signs) {
-    var answer = 0;
-    for (let i = 0; i < absolutes.length; i++) {
-        answer += signs[i] ? absolutes[i] : -1 * absolutes[i];
-    }
-    return answer;
+  var answer = 0;
+  for (let i = 0; i < absolutes.length; i++) {
+    answer += signs[i] ? absolutes[i] : -1 * absolutes[i];
+  }
+  return answer;
 }
 
 //정답 3 - jaewon1676
 function solution(absolutes, signs) {
-    var answer = 0;
-    for (var i = 0; i < absolutes.length; i++) {
-        if (signs[i] === false) {
-            answer = answer - absolutes[i];
-        } else {
-            answer = answer + absolutes[i];
-        }
+  var answer = 0;
+  for (var i = 0; i < absolutes.length; i++) {
+    if (signs[i] === false) {
+      answer = answer - absolutes[i];
+    } else {
+      answer = answer + absolutes[i];
     }
+  }
 
-    return answer;
+  return answer;
 }
 
 // 정답 4 - prove-ability
 function solution(absolutes, signs) {
-    var answer = 0;
+  var answer = 0;
 
-    for (let i = 0, len = absolutes.length; i < len; i++) {
-        if (!signs[i]) answer += absolutes[i] * -1;
-        else answer += absolutes[i];
-    }
+  for (let i = 0, len = absolutes.length; i < len; i++) {
+    if (!signs[i]) answer += absolutes[i] * -1;
+    else answer += absolutes[i];
+  }
 
-    return answer;
+  return answer;
 }
 
 // 정답 5 - prove-ability

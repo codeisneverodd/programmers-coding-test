@@ -1,10 +1,8 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(phone_number) {
-    var answer = '';
-    answer = '*'.repeat(phone_number.length - 4) + phone_number.slice(-4)
-    return answer;
+  return "*".repeat(phone_number.length - 4) + phone_number.slice(-4);
 }
 
 //정답 2 - chaerin-dev
@@ -17,8 +15,8 @@ function solution(phone_number) {
 
 // 정답 3 - prove-ability
 function solution(phone_number) {
-  var answer = '';
-  answer += "*".repeat(phone_number.length - 4)
-  answer += phone_number.slice(phone_number.length - 4, phone_number.length)
+  var answer = "";
+  answer += "*".repeat(phone_number.length - 4);
+  answer += phone_number.slice(phone_number.length - 4, phone_number.length);
   return answer;
 }

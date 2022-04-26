@@ -1,15 +1,13 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(participant, completion) {
-  var answer = "";
   participant = participant.sort();
   completion = completion.sort();
-  for (let i = 0, len = completion.length; i < len; i++) {
+  for (let i = 0; i < completion.length; i++) {
     if (participant[i] !== completion[i]) return participant[i];
   }
-  answer = participant[participant.length - 1];
-  return answer;
+  return participant[participant.length - 1];
 }
 
 //정답 2 - jaewon1676

@@ -1,20 +1,18 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(arr) {
-    var answer = arr.reduce((prev, current) => prev + current) / arr.length
-    return answer;
+  return arr.reduce((acc, curr) => acc + curr) / arr.length;
 }
 
 //정답 2 - jaewon1676
 function solution(arr) {
-    var answer = 0;
-    for (var i = 0; i < arr.length; i++) {
-        answer += arr[i]
-    }
-    return answer / arr.length;
+  var answer = 0;
+  for (var i = 0; i < arr.length; i++) {
+    answer += arr[i];
+  }
+  return answer / arr.length;
 }
-
 
 //정답 3 - chaerin-dev
 function solution(arr) {
@@ -26,9 +24,9 @@ function solution(arr) {
 
 // 정답 4 - prove-ability
 function solution(arr) {
-    var answer = 0;
-    arr.forEach((num) => {
-        answer += num
-    })
-    return answer / arr.length;
+  var answer = 0;
+  arr.forEach((num) => {
+    answer += num;
+  });
+  return answer / arr.length;
 }

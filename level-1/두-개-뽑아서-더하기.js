@@ -1,17 +1,14 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(numbers) {
-    var answer = [];
-    const len = numbers.length
-    for (let i = 0; i < len; i++) {
-        for (let j = i + 1; j < len; j++) {
-            answer.push(numbers[i] + numbers[j])
-        }
+  const answer = [];
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+      answer.push(numbers[i] + numbers[j]);
     }
-    answer = [...new Set(answer)]
-    answer.sort((a, b) => a - b)
-    return answer;
+  }
+  return [...new Set(answer)].sort((a, b) => a - b);
 }
 
 //정답 2 - prove-ability
@@ -26,3 +23,4 @@ function solution(numbers) {
     
     return answer.sort((a, b) => a - b);
 }
+
