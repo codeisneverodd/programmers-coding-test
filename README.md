@@ -1,7 +1,7 @@
 # 프로그래머스 모든 문제 풀이
 [![방문자수](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/codeisneverodd/programmers-coding-test&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=방문자수(Today/Total)&edge_flat=true)](https://github.com/codeisneverodd)
 ### ⭐️ README 개선 아이디어를 모집합니다 ⭐️
-README 개선에 따른 혜택이 있습니다. 누구나 참여하실 수 있으며, 관심 있으신 분은 👉 [⭐️ README를 개선에 관한 이슈⭐️](https://github.com/codeisneverodd/programmers-coding-test/issues/45#issue-1215382179) 를 클릭해주세요!
+README 개선에 따른 혜택이 있습니다. 누구나 참여하실 수 있으며, 관심 있으신 분은 👉 [README를 개선에 관한 이슈⭐](https://github.com/codeisneverodd/programmers-coding-test/issues/45#issue-1215382179) 를 클릭해주세요!
 
 > 😁 **도움이 되셨다면** 오른쪽 상단 ↗ 의 ⭐️ **Star를 클릭**해 이 프로젝트를 응원해주세요!
 
