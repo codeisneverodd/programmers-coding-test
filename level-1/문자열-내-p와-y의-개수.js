@@ -24,3 +24,13 @@ function solution(s) {
 // 문자열에서 특정 문자의 개수를 구하려면 split을 사용하면 된다.
 // Ex. "ababb".split("a") 의 결과는 ["", "b", "bb"]
 // => 즉, "a"의 갯수는 3에서 1을 뺀 2
+
+// 정답 4 - prove-ability
+function solution(s){
+  // 배열로 변환    
+  s = s.split("");
+  // filter 를 사용해 갯수 추출
+  const pCount = s.filter((v) => v === "p" || v === "P").length;
+  const yCount = s.filter((v) => v === "y" || v === "Y").length;
+  return pCount === yCount;
+}
