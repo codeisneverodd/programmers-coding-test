@@ -18,7 +18,12 @@ function solution(num) {
   return answer;
 }
 
-//정답 3 - prove-ability
+//정답 4 - prove-ability
 function solution(num) {
   return num % 2 === 0 ? "Even" : "Odd";
+}
+
+//정답 5 - yongchanson
+function solution(num) {
+  return num % 2 ? "Odd" : "Even";
 }
