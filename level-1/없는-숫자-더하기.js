@@ -38,7 +38,7 @@ function solution(numbers) {
   return answer;
 }
 
-//정답 3 - prove-ability
+//정답 4 - prove-ability
 function solution(numbers) {
   var answer = 0;
 
@@ -46,5 +46,14 @@ function solution(numbers) {
     if (!numbers.includes(i)) answer += i;
   }
 
+  return answer;
+}
+
+//정답 5 - chaerin-dev
+function solution(numbers) {
+  let answer = 0;
+  for (let i = 0; i <= 9; i++) {
+    if (!numbers.includes(i)) answer += i;
+  }
   return answer;
 }
