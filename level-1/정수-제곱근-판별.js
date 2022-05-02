@@ -22,3 +22,11 @@ function solution(n) {
   // 아니라면 -1 반환
   return -1;
 }
+
+//정답 4 - jaewon1676
+function solution(n) {
+  let s = parseInt(Math.sqrt(n)) // n의 제곱근을 확인
+  if (s ** 2 === n) return ((s+1) ** 2)
+  
+  return -1;
+}
