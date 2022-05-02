@@ -54,3 +54,31 @@ function solution(board, moves) {
 2. 크레인에 찾고자 하는 행을 저장하여 제일 윗부분부터 탐색한다., 제일 윗부분이 비어있으면 다음 행으로 넘어가면서 탐색 한다.
 3. 값이 들어있으면 해당 값을 바구니에 push 해주고, 비워준다.
 4. 바구니 배열의 끝부분에 같은 인형 값이 연속되어있으면 연속 된 인형들을 pop 해주고, answer에 인형이 터진 횟수인 2를 더해준다. */
+
+//정답 3 - chaerin-dev
+function solution(board, moves) {
+  let n = board.length;
+
+  // 격자의 세로줄이 하나의 배열이 되도록 2차원 배열 방향 변경
+  board = board.flat();
+  let rotatedBoard = Array.from({ length: n }, (i) => []);
+  for (let i = 0; i < board.length; i++) {
+    if (board[i]) rotatedBoard[i % n].push(board[i]);
+  }
+
+  // moves 배열 순회하며 인형 꺼내서 stack에 집어넣기
+  let stack = [];
+  let cnt = 0;
+  for (let move of moves) {
+    let doll = rotatedBoard[move - 1].shift();
+    if (doll === undefined) continue;
+    if (stack[stack.length - 1] === doll) {
+      stack.pop();
+      cnt += 2;
+    } else {
+      stack.push(doll);
+    }
+  }
+
+  return cnt;
+}
