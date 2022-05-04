@@ -1,4 +1,4 @@
-// https://programmers.co.kr/learn/courses/30/lessons/1844
+// https://github.com/codeisneverodd/programmers-coding-test
 //정답 1 - prove-ability
 function solution(maps) {
     // BFS 활용
@@ -18,7 +18,7 @@ function solution(maps) {
             // 다음 길 위치
             const nextY = dy + y, nextX = dx + x;
             // 맵 밖으로 나간다면
-            if(isRoad(nextY, nextX, row, col)) continue;
+            if(isOut(nextY, nextX, row, col)) continue;
             // 도착한 곳이 벽이라면
             if(maps[nextY][nextX] === 0) continue;
             // 이미 지난 곳 벽으로 만들어서 다음에 접근 방지
@@ -37,4 +37,4 @@ function solution(maps) {
 const DIRECTION = [[1, 0], [0, 1], [-1, 0], [0, -1]];
 
 // 사용이 가능한 길인지 확인하는 함수
-const isRoad = (nextY, nextX, row, col) => nextY < 0 || nextX < 0 || nextY > row || nextX > col;
+const isOut = (nextY, nextX, row, col) => nextY < 0 || nextX < 0 || nextY > row || nextX > col;
