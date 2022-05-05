@@ -94,7 +94,7 @@ function solution(s) {
     "nine",
   ];
 
-  for (var i = 0; i < s.length * 2; i++) {
+  for (let i = 0; i < s.length * 2; i++) {
     let p = i % en.length;
     s = s.replace(en[p], p);
   }
