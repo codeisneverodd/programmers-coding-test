@@ -34,3 +34,8 @@ function solution(a, b) {
     }
     return answer;
 }
+
+//정답 5 - chaerin-dev
+function solution(a, b) {
+  return a.reduce((acc, e, i) => acc + e * b[i], 0);
+}
