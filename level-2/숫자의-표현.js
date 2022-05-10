@@ -15,3 +15,21 @@ function solution(n) { //수학적 풀이는 별도로 하지 않았습니다.
     }
     return answer;
 }
+
+//완벽한 정답이 아닙니다.
+//정답 2 - prove-ability
+function solution(n) {
+  let answer = 0;
+  for(let i = 1; i <= n; i++) {
+      let sum = 0;
+      for(let j = i; j <= n; j++) {
+          sum += j;
+          if(sum > n) break;
+          if(n === sum) {
+              answer++;
+              break;
+          }
+      }
+  }
+  return answer;
+}
