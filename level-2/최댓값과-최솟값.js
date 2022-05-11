@@ -24,3 +24,9 @@ function solution(s) {
     let large = s[s.length - 1] // s의 최댓값
     return (small + ' ' + large)
 }
+
+//정답 4 - prove-ability
+function solution(s) {
+  s = s.split(" ").map((v) => parseInt(v, 10))
+  return `${Math.min(...s)} ${Math.max(...s)}`;
+}
