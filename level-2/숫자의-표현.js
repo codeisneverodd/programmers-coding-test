@@ -16,7 +16,6 @@ function solution(n) { //수학적 풀이는 별도로 하지 않았습니다.
     return answer;
 }
 
-//완벽한 정답이 아닙니다.
 //정답 2 - prove-ability
 function solution(n) {
   let answer = 0;
