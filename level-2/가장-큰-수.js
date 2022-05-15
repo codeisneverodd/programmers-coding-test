@@ -16,7 +16,7 @@ const sortFunc = (a, b) => {
 }
 
 
-// 정담 2 - createhb21
+// 정답 2 - createhb21
 function solution(numbers) {
     let stringNum = 
       numbers.map((el) => el + '').sort((a,b) => (b+a) - (a+b));
@@ -24,7 +24,6 @@ function solution(numbers) {
     return stringNum[0] === '0' ? '0' : stringNum.join('');
 }
 
-//완벽한 정답이 아닙니다.
 // 정답 3 - prove-ability
 function solution(numbers) {
   if(numbers.every(v => v === 0)) return "0";
