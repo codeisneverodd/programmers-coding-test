@@ -13,3 +13,13 @@ function solution(n) {
     }
     return ans;
 }
+
+//정답 2 - yongchanson
+function solution(n) {
+  let result = 0;
+  while (n > 0) {
+    result += n % 2;
+    n = Math.floor(n / 2);
+  }
+  return result;
+}
