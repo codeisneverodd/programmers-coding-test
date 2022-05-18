@@ -30,3 +30,11 @@ function solution(s) {
   s = s.split(" ").map((v) => parseInt(v, 10))
   return `${Math.min(...s)} ${Math.max(...s)}`;
 }
+
+//정답 5 - yongchanson
+function solution(s) {
+  let arr = s.split(" ").sort((a, b) => a - b);
+  arr.splice(1, a.length - 2, " ");
+  let result = a.join("");
+  return result;
+}
