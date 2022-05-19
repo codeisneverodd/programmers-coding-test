@@ -31,3 +31,14 @@ const countOne = (str) => {
     return str.split('').reduce((sum, currentChar) =>
         currentChar === '1' ? sum += 1 : sum, 0)
 }
+
+//정답 3 - prove-ability
+function solution(n) {
+  let i = n;
+  n = n.toString(2).match(/1/g).length;
+  while(true) {
+      i++;
+      const value = i.toString(2).match(/1/g).length;
+      if(n === value) return i;
+  }
+}
