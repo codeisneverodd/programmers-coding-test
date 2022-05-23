@@ -1,13 +1,12 @@
 //https://github.com/codeisneverodd/programmers-coding-test
-//완벽한 정답이 아닙니다.
-//정답 1 - codeisneverodd
+//더 좋은 풀이가 존재할 수 있습니다.
+//정답 1(🎩 refactor 220425) - codeisneverodd
 function solution(s) {
-    var answer = false;
-    let opened = 0
-    for (let i = 0, length = s.length; i < length; i++) {
-        s[i] === '(' ? opened += 1 : opened -= 1
-        if (opened < 0) return false
-    }
-    if (opened === 0) answer = true
-    return answer;
+  let opened = 0;
+  for (const bracket of s) {
+    if (bracket === "(") opened += 1;
+    if (bracket === ")") opened -= 1;
+    if (opened < 0) return false;
+  }
+  return opened === 0;
 }
