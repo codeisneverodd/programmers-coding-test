@@ -19,5 +19,5 @@ function solution(n, edge) {
             }
         }
     }
-    return distance.filter(x => x === Math.max(...distance))
+    return distance.filter(x => x === Math.max(...distance)).length
 }
