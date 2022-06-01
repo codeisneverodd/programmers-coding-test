@@ -7,18 +7,11 @@ const FILE_TO_UPDATE = path.resolve(__dirname, "./README.md");
 const updateData = `# 프로그래머스 모든 문제 풀이
 [![방문자수](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/codeisneverodd/programmers-coding-test&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=방문자수(Today/Total)&edge_flat=true)](https://github.com/codeisneverodd)
 
-## [🔍 검색 사이트](https://programmers-solution-bank.netlify.app/)가 출시되었습니다!
-🌱 모든 문제는 JavaScript로 풀이되며, 원하는 풀이는 **[검색 사이트](https://programmers-solution-bank.netlify.app/)**를 통해 찾으실 수 있습니다 
-
-[**🔍 프로그래머스 해설 은행 바로가기 ** ](https://programmers-solution-bank.netlify.app/) 
-
-> Issues 에 버그를 제보해주시면 README에 이름을 올려드립니다!
+### [🔍 검색 사이트](https://programmers-solution-bank.netlify.app/)가 출시되었습니다!
+🌱 모든 문제는 JavaScript로 풀이되며, 원하는 풀이는 [검색 사이트](https://programmers-solution-bank.netlify.app/)를 통해 찾으실 수 있습니다 
 
 > #### 😁 **도움이 되셨다면** 오른쪽 상단 ↗ 의 ⭐️ **Star를 클릭**해 이 프로젝트를 응원해주세요!
-
-🌱 프로그래머스의 [코딩테스트 문제](https://programmers.co.kr/learn/challenges?tab=all_challenges)의 문제 풀이를 찾으실 수 있습니다.
-
-
+[🔍 프로그래머스 해설 은행 바로가기](https://programmers-solution-bank.netlify.app/) 
 
 [![thumbnail-coding-test-no-id](https://user-images.githubusercontent.com/54318460/158711288-5fbd903f-d3b6-4d56-bd1f-9e5946d67d0a.png)
 ](https://github.com/codeisneverodd/programmers-coding-test/)
