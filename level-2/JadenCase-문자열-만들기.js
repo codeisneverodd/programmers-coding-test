@@ -22,3 +22,16 @@ function solution(s) {
 // 덩어리의 요소가 첫번째이면 대문자, 그렇지 않으면 소문자로 변환 해줍니다.    
 // .join('')  작은 배열들을 합쳐줍니다.
 // .join(' ') 큰 배열들을 합쳐줍니다.
+
+//정답 3 - yongchanson
+function solution(s) {
+  let answer = [];
+  s = s.split(" ");
+
+  for (let i = 0; i < s.length; i++) {
+    answer.push(
+      s[i].substring(0, 1).toUpperCase() + s[i].substring(1).toLowerCase()
+    );
+  }
+  return answer.join(" ");
+}
