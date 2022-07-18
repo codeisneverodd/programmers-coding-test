@@ -18,6 +18,7 @@
   "homepage": "https://github.com/codeisneverodd/programmers-coding-test#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.10",
-    "node-fetch": "^3.2.3"
+    "node-fetch": "^3.2.3",
+    "prettier": "^2.7.1"
   }
 }
