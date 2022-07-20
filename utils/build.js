@@ -22,27 +22,28 @@ const updateData = `# 프로그래머스 모든 문제 풀이
 
 ### 🧪 기능 구현
 
-| Main Contributors                                    | Contribute Lists            | About Me |
-| ----------------------------------------------- | --------------------------- | -------- |
-| [cruelladevil](https://github.com/cruelladevil) | - README 자동 업데이트 구현 | 🚧        |
+| Main Contributors                               | 
+| ----------------------------------------------- |
+| [cruelladevil](https://github.com/cruelladevil) |
 
 
 
 ### 🔥 문제 풀이
 
-| Main Contributors                                   | Commits | About Me |
-| --------------------------------------------------- | ------- | -------- |
-| [codeisneverodd](https://github.com/codeisneverodd) | 🚧       | 🚧        |
-| [chaerin-dev](https://github.com/chaerin-dev)       | 🚧       | 🚧        |
-| [jaewon1676](https://github.com/jaewon1676)         | 🚧       | 🚧        |
-| [prove-ability](https://github.com/prove-ability)   | 🚧       | 🚧        |
-| [yongchanson](https://github.com/yongchanson)       | 🚧       | 🚧        |
+| Main Contributors                                   | 
+| --------------------------------------------------- | 
+| [codeisneverodd](https://github.com/codeisneverodd) | 
+| [chaerin-dev](https://github.com/chaerin-dev)       | 
+| [jaewon1676](https://github.com/jaewon1676)         | 
+| [prove-ability](https://github.com/prove-ability)   | 
+| [yongchanson](https://github.com/yongchanson)       | 
 
-| Contributors                                | Commits |
-| ------------------------------------------- | ------- |
-| [createhb21](https://github.com/createhb21) | 🚧       |
-| [le2sky](https://github.com/le2sky) | 🚧       |
-| [ljw0096](https://github.com/ljw0096) | 🚧       |
+| Contributors                                |
+| ------------------------------------------- |
+| [createhb21](https://github.com/createhb21) |
+| [le2sky](https://github.com/le2sky) |
+| [ljw0096](https://github.com/ljw0096) | 
+| [minjongbaek](https://github.com/minjongbaek) |
 
 ### Level 1 ✅
 
@@ -58,7 +59,7 @@ ${getTableStr(1)}
 
 - 전체 문제 수: 64문제
 - 풀이 문제 수: ${getInfoList(2).length}문제
-- 풀이 완료 예상 시점: 2022년 4월 중
+- 풀이 완료 예상 시점: 2022년 7월 중
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
@@ -68,7 +69,7 @@ ${getTableStr(2)}
 
 - 전체 문제 수: 52문제
 - 풀이 문제 수: ${getInfoList(3).length}문제
-- 풀이 완료 예상 시점: 2022년 8월 중
+- 풀이 완료 예상 시점: 2022년 10월 중
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
@@ -96,24 +97,27 @@ ${getTableStr(5)}
 
 ## 🙏🏻 아직 풀리지 않은 문제의 해답을 추가해 주세요!
 ### 커밋 컨벤션
-| 접두어  | 작업 내용   |
-| ------- | -------------------------------------------------- |
-| Create  | 새로운 파일 생성 후 문제풀이 코드를 추가 할 경우   |
-| Add     | 기존 파일에 문제풀이 코드를 추가 할 경우           |
-| Update  | 파일의 기존 코드를 수정 할 경우                    |
-| Rename  | 파일 혹은 폴더명을 수정하거나 옮기는 작업만일 경우 |
-| Remove  | 파일을 삭제하는 작업만 수행한 경우                 |
-| Comment | 주석 추가 및 수정의 경우                           |
 
-### 추가 방법
+| 접두어   | 작업 내용                           |
+| -------- | ----------------------------------- |
+| solution | 풀이 추가                           |
+| fix      | 모든 종류의 오류 수정                  |
+| docs     | 문서 수정(코드 수정 없음)               |
+| etc      | 위의 경우에 해당하는 것이 없는 경우        |
 
-1. 우측 상단의 Fork를 눌러 본인의 GitHub로 이동합니다.
-2. Fork한 Repository를 \`git clone 자신이-Fork한-자신의-Repository-주소\` 를 통해 다운받습니다.
-3. 해답을 해당하는 Level의 폴더에 \`00-해답-예시.js\`에 따라 생성합니다. 이때, **반드시 공백은\`-\` 바꾸어** 파일 이름을 짓습니다.
-4. 자신이 Fork한 자신의 Repository에 push를 한 후, GitHub에서 Create pull request를 통해 기여합니다.
-5. 해설은 검수자들의 확인이 끝나는대로 본 Repository에 반영됩니다.
+### 🌱 풀이 기여 방법
 
-## 저작권
+1. Fork 한 후 본인의 해설을 추가합니다.
+2. 본인의 저장소에서 이곳으로 PR을 하면, 검토 및 코드리뷰 후 반영됩니다.
+
+### 🔥 기여 시 필수 사항
+1. 파일 이름은 공백이 없어야하며, 공백은 - 로 채웁니다.(문제풀이 창에서 문제 이름을 복사하여 사용하는 것을 권장드립니다
+
+예시) 가장 먼 노드 => 가장-먼-노드.js // [1차] 뉴스 클러스터링 => [1차]-뉴스-클러스터링
+
+2. 풀이를 추가할 시 반드시 주석을 작성하여야합니다. 기존 파일에 추가할 때는, 기존 해설들의 주석을. 새롭게 파일을 생성하실 때는 00-해답-예시.js 를 참고하시면 됩니다.
+
+## 👉 저작권
 
 해당 Repository의 해답을 자신의 저작물에 추가할 수 있지만 **반드시** 본 Repository의
 주소 \`https://github.com/codeisneverodd/programmers-coding-test\`
