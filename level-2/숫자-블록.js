@@ -2,7 +2,7 @@
 //완벽한 정답이 아닙니다.
 //정답 1 - iHoHyeon
 function solution(begin, end) {
-  return new Array(end - begin + 1).fill().map((v, idx) => calc(begin + idx));
+  return new Array(end - begin + 1).fill(null).map((v, idx) => calc(begin + idx));
   // begin ~ end 각 위치에 대해서 calc 함수의 return 값으로 채운다.
 }
   
