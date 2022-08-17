@@ -7,11 +7,9 @@ on:
   push:
     branches:
       - main
-      - manage
   pull_request:
     branches:
       - main
-      - manage
 jobs:
   build:
     runs-on: ubuntu-latest
