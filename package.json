@@ -4,7 +4,8 @@
   "description": "🌱 프로그래머스의 [코딩테스트 문제]",
   "type": "module",
   "scripts": {
-    "build": "node ./utils/build.js"
+    "build": "node ./utils/build.js",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,12 @@
     "cheerio": "^1.0.0-rc.10",
     "node-fetch": "^3.2.3",
     "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
