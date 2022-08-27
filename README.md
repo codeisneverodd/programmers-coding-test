@@ -17,8 +17,8 @@
 
 ### Level 1 ✅
 
-- 전체 문제 수: 55문제
-- 풀이 문제 수: 55문제
+- 전체 문제 수: 56문제
+- 풀이 문제 수: 56문제
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
@@ -77,6 +77,7 @@
 | 53 | [하샤드 수](https://school.programmers.co.kr//learn/courses/30/lessons/12947) | [하샤드-수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/하샤드-수.js) |
 | 54 | [핸드폰 번호 가리기](https://school.programmers.co.kr//learn/courses/30/lessons/12948) | [핸드폰-번호-가리기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/핸드폰-번호-가리기.js) |
 | 55 | [행렬의 덧셈](https://school.programmers.co.kr//learn/courses/30/lessons/12950) | [행렬의-덧셈.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/행렬의-덧셈.js) |
+| 56 | [성격 유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666) | [성격-유형-검사하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/성격-유형-검사하기.js) |
 
 ### Level 2 👨🏻‍💻(풀이 중..)
 
