@@ -8,13 +8,13 @@ const updateData = `# 프로그래머스 모든 문제 풀이
 [![방문자수](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/codeisneverodd/programmers-coding-test&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=방문자수(Today/Total)&edge_flat=true)](https://github.com/codeisneverodd)
 ## 👋 소개
 - 🌱 모든 문제는 JavaScript로 풀이되고 다양한 사람의 풀이가 올라와있어요
-- ✅ 프로그래머스는 정답을 통과시키면 다른 사람들의 풀이를 볼 수 있어요! [익스텐션](https://chrome.google.com/webstore/detail/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%95%EB%8B%B5-%ED%86%B5%EA%B3%BC%EA%B8%B0/pogpgnlafgchgebcnohihjjmdjcffenl?hl=ko) 을 이용해보세요!
+- ✅ 프로그래머스는 정답을 통과시키면 다른 사람들의 풀이를 볼 수 있어요! [익스텐션](https://chrome.google.com/webstore/detail/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%95%EB%8B%B5-%ED%86%B5%EA%B3%BC%EA%B8%B0/pogpgnlafgchgebcnohihjjmdjcffenl?hl=ko)을 이용해보세요!
 - 🔎 [검색 사이트](https://programmers-solution-bank.netlify.app/) 혹은 본 README에서 검색을 통해 다양한 풀이도 볼 수 있어요!
 - ⭐ **도움이 되셨다면** 오른쪽 상단 ↗ 의 ⭐️ **Star를 클릭**해 이 프로젝트를 응원해주세요!
 
-## 👻 홍보
-- [크롬익스텐션](https://chrome.google.com/webstore/detail/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%95%EB%8B%B5-%ED%86%B5%EA%B3%BC%EA%B8%B0/pogpgnlafgchgebcnohihjjmdjcffenl?hl=ko) 이 출시되었습니다 🎉🎉
-- 출시 이벤트(~ 9/5): 리뷰를 남기신 분들 중 희망하는 분들께 codeisneverodd 와의 **1대1 커피챗**(10분 내외, 온라인)을 제공합니다!
+## 👻 [크롬익스텐션](https://chrome.google.com/webstore/detail/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%95%EB%8B%B5-%ED%86%B5%EA%B3%BC%EA%B8%B0/pogpgnlafgchgebcnohihjjmdjcffenl?hl=ko) 이 출시되었습니다 🎉🎉
+- 😆 다운로드 👉 [프로그래머스 정답 통과기 - 크롬 웹 스토어](https://chrome.google.com/webstore/detail/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%95%EB%8B%B5-%ED%86%B5%EA%B3%BC%EA%B8%B0/pogpgnlafgchgebcnohihjjmdjcffenl?hl=ko)
+- 🎉 출시 이벤트(~ 9/5): 리뷰를 남기신 분들 중 희망하는 분들께 1대1 커피챗(10분 내외, 온라인)을 제공합니다! 리뷰를 남기고 캡쳐와 함께 codeisneverodd@gmail.com 로 연락주세요! 😁 
 
 [![extension-promotion-github](https://user-images.githubusercontent.com/54318460/187187794-e3c4fb63-e2ae-4332-9296-9fa2368a0e42.png)
 ](https://chrome.google.com/webstore/detail/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%95%EB%8B%B5-%ED%86%B5%EA%B3%BC%EA%B8%B0/pogpgnlafgchgebcnohihjjmdjcffenl?hl=ko)
