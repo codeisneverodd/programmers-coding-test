@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import path from 'path';
-import { makeAPI } from './api.js';
+import { getSolutions } from './api.js';
 import fetchTitleLink from './fetch.js';
 
 const __dirname = path.resolve();
