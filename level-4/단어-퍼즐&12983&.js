@@ -19,18 +19,13 @@ function solution(strs, t) {
           minCountToIndex[currentIndex] = 1;
         } else {
           //앞쪽에 남은 것이 있다면, 현재 검사중이 영역까지 필요한 조각 수는, 지금까지 구한 최소 값과 지금 구한 값 중 최소값
-          minCountToIndex[currentIndex] = Math.min(
-            minCountToIndex[currentIndex],
-            minCountToIndex[frontLength - 1] + 1
-          );
+          minCountToIndex[currentIndex] = Math.min(minCountToIndex[currentIndex], minCountToIndex[frontLength - 1] + 1);
         }
       }
     }
   }
   //마지막 영역이 Infinity 이면 만들기 불가능한 단어, 아니라면 마지막 영역의 값을 리턴
-  return minCountToIndex[tLength - 1] === Infinity
-    ? -1
-    : minCountToIndex[tLength - 1];
+  return minCountToIndex[tLength - 1] === Infinity ? -1 : minCountToIndex[tLength - 1];
 }
 
 //리드미 테스트용 코멘트
