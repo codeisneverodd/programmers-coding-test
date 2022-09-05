@@ -1,10 +1,5 @@
 [
   {
-    "name": "00 해답-예시.js",
-    "level": 1,
-    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//더 좋은 풀이가 존재할 수 있습니다.\n// 1 - 본인의 깃허브 아이디\nfunction solution(n) {\n  //프로그래머스에 제출하여 통과된 함수를 복사 붙여넣기 해주세요!\n}\n\n"
-  },
-  {
     "id": "12901",
     "name": "2016년",
     "level": 1,
@@ -339,11 +334,6 @@
     "name": "행렬의 덧셈",
     "level": 1,
     "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//더 좋은 풀이가 존재할 수 있습니다.\n// 1(🎩 refactor 220425) - codeisneverodd\nfunction solution(arr1, arr2) {\n  const answer = [];\n  arr1.forEach((row, rowIndex) => {\n    answer.push(row.map((col, colIndex) => col + arr2[rowIndex][colIndex]));\n  });\n  return answer;\n}\n\n"
-  },
-  {
-    "name": "00 해답-예시.js",
-    "level": 2,
-    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//더 좋은 풀이가 존재할 수 있습니다.\n// 1 - 본인의 깃허브 아이디\nfunction solution(n) {\n  //프로그래머스에 제출하여 통과된 함수를 복사 붙여넣기 해주세요!\n}\n\n"
   },
   {
     "id": "12899",
@@ -718,11 +708,6 @@
     "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//완벽한 정답이 아닙니다.\n// 1 - codeisneverodd\nfunction solution(relation) {\n    //1. 가능한 조합을 1개~Attribute개수 만큼 찾는다.\n    //2. 해당 개수의 조합이 키가 될 수 있는지 검사하고, 가능하면 후보키에 추가한다.\n    //3. 단 추가하려고 할 때, 후보키에 있는 값이 자신의 부분 집합이 될 수 있으면 추가하지 않는다.\n    const keys = []\n    const totalAttrCount = relation[0].length\n    const indexList = Array.from(Array(totalAttrCount), (x, index) => index) // [0,1,2,3 ... totalAttrCount-1]\n\n    //Fn for 2. 해당 조합으로 각 row의 attribute를 모았을 때 중복이 있는지를 반환하는 함수\n    const isUnique = (relation, attrIndexComb) => {\n        let result = Array.from(Array(relation.length), x => '')\n        for (const attrIndex of attrIndexComb) {\n            relation.forEach((row, rowIndex) => result[rowIndex] += row[attrIndex]) //Set를 이용해 중복 검사를 하기 위해 result에 string으로 넣음.\n        }\n        return result.length === [...new Set(result)].length\n    }\n\n    //Fn for 3. keys에 현재 구한 검사할 조합의 부분집합이 존재하는지 반환, 단 keys에 들어있는 각 조합의 크기는 현재 검사할 조합의 크기보다 작다.\n    const isMinimal = (attrComb) => {\n        for (const key of keys) if (key.every(attr => attrComb.includes(attr))) return false\n        return true\n    }\n\n    //가능한 모든 조합을 검사\n    for (let attrCount = 1; attrCount <= totalAttrCount; attrCount++) {\n        const combinations = getCombinations(indexList, attrCount)\n        for (const attrComb of combinations) {\n            if (isMinimal(attrComb) && isUnique(relation, attrComb)) keys.push(attrComb)\n        }\n    }\n\n    return keys.length\n}\n\n//Fn for 1. 조합을 반환하는 함수\nconst getCombinations = (array, selectNumber) => {\n    const result = [];\n    if (selectNumber === 1) {\n        return array.map((element) => [element]);\n    }\n    array.forEach((fixed, index, origin) => {\n        const restCombinations = getCombinations(origin.slice(index + 1), selectNumber - 1);\n        const attached = restCombinations.map((restCombination) => [fixed, ...restCombination]);\n        result.push(...attached);\n    });\n    return result;\n}\n"
   },
   {
-    "name": "00 해답-예시.js",
-    "level": 3,
-    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//더 좋은 풀이가 존재할 수 있습니다.\n// 1 - 본인의 깃허브 아이디\nfunction solution(n) {\n  //프로그래머스에 제출하여 통과된 함수를 복사 붙여넣기 해주세요!\n}\n\n"
-  },
-  {
     "id": "12900",
     "name": "2 x-n-타일링",
     "level": 3,
@@ -768,28 +753,18 @@
     "id": "42628",
     "name": "이중우선순위큐",
     "level": 3,
-    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//완벽한 정답이 아닙니다.\n// 1 - jaewon1676\nfunction solution(operations) {\n  var answer = [];\n  for (let i = 0; i < operations.length; i++) {\n      \n      // 숫자 삽입\n      if (operations[i][0] == 'I') {\n          let m = operations[i].substring(2, operations[i].length)\n          answer.push(m)\n      }\n      // if 최댓값 삭제\n      else if (operations[i][0] == 'D' && operations[i][2] == '1' && operations.length > 0) {\n          answer.pop()\n      }\n      // if 최솟값 삭제\n      else if (operations[i][0] == 'D' && operations[i][2] == '-' && operations[i][3] == '1' && operations.length > 0){\n          \n          answer.shift()            \n      }\n      \n      answer.sort((a, b) => {return a - b});\n  }\n  if (answer.length == 0) return [0, 0]\n  else {\n      return [parseInt(answer.pop()), parseInt(answer.shift())];\n  }     \n}\n/* 풀이 과정\n1. 연산 처리를 구별하기 위해 배열의 0번째 자리, 2번째 자리에 있는 등을 비교하여 조건에 따른 명령을 실행한다.\n2. answer 배열을 정렬 해준다\n3. 큐가 비어있으면 ( length == 0 ) 0을 반환. , 그렇지 않으면 [최댓값, 최솟값]을 반환한다.\n*/"
+    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//완벽한 정답이 아닙니다.\n// 1 - jaewon1676\nfunction solution(operations) {\n  var answer = [];\n  for (let i = 0; i < operations.length; i++) {\n    // 숫자 삽입\n    if (operations[i][0] == 'I') {\n      let m = operations[i].substring(2, operations[i].length);\n      answer.push(m);\n    }\n    // if 최댓값 삭제\n    else if (operations[i][0] == 'D' && operations[i][2] == '1' && operations.length > 0) {\n      answer.pop();\n    }\n    // if 최솟값 삭제\n    else if (operations[i][0] == 'D' && operations[i][2] == '-' && operations[i][3] == '1' && operations.length > 0) {\n      answer.shift();\n    }\n\n    answer.sort((a, b) => {\n      return a - b;\n    });\n  }\n  if (answer.length == 0) return [0, 0];\n  else {\n    return [parseInt(answer.pop()), parseInt(answer.shift())];\n  }\n}\n/* 풀이 과정\n1. 연산 처리를 구별하기 위해 배열의 0번째 자리, 2번째 자리에 있는 등을 비교하여 조건에 따른 명령을 실행한다.\n2. answer 배열을 정렬 해준다\n3. 큐가 비어있으면 ( length == 0 ) 0을 반환. , 그렇지 않으면 [최댓값, 최솟값]을 반환한다.\n*/\n"
   },
   {
     "id": "43238",
     "name": "입국심사",
     "level": 3,
-    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//완벽한 정답이 아닙니다.\n// 1 - codeisneverodd\nfunction solution(n, times) {\n    //최소로 걸릴 수 있는 시간 left, 최대로 걸릴 수 있는 시간 right\n    let [left, right] = [1, Math.max(...times) * n]\n    while (left <= right) {\n        const mid = Math.floor((left + right) / 2)\n        const sum = times.reduce((acc, time) => acc + Math.floor(mid / time), 0)\n        //sum은 mid 시간 동안 처리 할 수 있는 사람의 수\n        if (sum < n) {\n            left = mid + 1\n        } else {\n            right = mid - 1\n        }\n    }\n    // left 가 right를 넘어갔다는 것은 left가 n보다 크거나 같아져서 n명을 수용할 수 최소값이 되있다는 것이다.\n    return left;\n}"
-  },
-  {
-    "name": "00 해답-예시.js",
-    "level": 4,
-    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//더 좋은 풀이가 존재할 수 있습니다.\n// 1 - 본인의 깃허브 아이디\nfunction solution(n) {\n  //프로그래머스에 제출하여 통과된 함수를 복사 붙여넣기 해주세요!\n}\n\n"
+    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//완벽한 정답이 아닙니다.\n// 1 - codeisneverodd\nfunction solution(n, times) {\n  //최소로 걸릴 수 있는 시간 left, 최대로 걸릴 수 있는 시간 right\n  let [left, right] = [1, Math.max(...times) * n];\n  while (left <= right) {\n    const mid = Math.floor((left + right) / 2);\n    const sum = times.reduce((acc, time) => acc + Math.floor(mid / time), 0);\n    //sum은 mid 시간 동안 처리 할 수 있는 사람의 수\n    if (sum < n) {\n      left = mid + 1;\n    } else {\n      right = mid - 1;\n    }\n  }\n  // left 가 right를 넘어갔다는 것은 left가 n보다 크거나 같아져서 n명을 수용할 수 최소값이 되있다는 것이다.\n  return left;\n}\n"
   },
   {
     "id": "12983",
     "name": "단어 퍼즐",
     "level": 4,
-    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//완벽한 정답이 아닙니다.\n// 1 - codeisneverodd\n//코드 참고자료: https://velog.io/@longroadhome/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-LV.4-%EB%8B%A8%EC%96%B4-%ED%8D%BC%EC%A6%90\nfunction solution(strs, t) {\n  const tLength = t.length; //자주 쓰는 값 미리 계산\n  //Infinity 로 선언을 해야 조합이 불가능한 영역의 값을 무한으로 두고, 그 영역에 하나를 더해도 불가능하다는 것을 Infinity로 표현할 수 있게 된다.\n  const minCountToIndex = new Array(tLength).fill(Infinity);\n  for (let currentIndex = 0; currentIndex < tLength; currentIndex++) {\n    //내가 검사할 부분은 t의 0~currentIndex 영역\n    const currentSlice = t.slice(0, currentIndex + 1);\n    for (const str of strs) {\n      //현재 영역이 strs에 있는 조각들 중 하나로 끝난다면\n      if (currentSlice.endsWith(str)) {\n        //frontLength 는 str 조각을 제외한 앞 쪽의 남은 조각의 길이\n        const frontLength = currentIndex - str.length + 1;\n        if (frontLength === 0) {\n          //앞쪽에 남은 것이 없다면, 현재 검사중인 영역 = strs에 있는 조각\n          minCountToIndex[currentIndex] = 1;\n        } else {\n          //앞쪽에 남은 것이 있다면, 현재 검사중이 영역까지 필요한 조각 수는, 지금까지 구한 최소 값과 지금 구한 값 중 최소값\n          minCountToIndex[currentIndex] = Math.min(\n            minCountToIndex[currentIndex],\n            minCountToIndex[frontLength - 1] + 1\n          );\n        }\n      }\n    }\n  }\n  //마지막 영역이 Infinity 이면 만들기 불가능한 단어, 아니라면 마지막 영역의 값을 리턴\n  return minCountToIndex[tLength - 1] === Infinity\n    ? -1\n    : minCountToIndex[tLength - 1];\n}\n\n//리드미 테스트용 코멘트\n"
-  },
-  {
-    "name": "00 해답-예시.js",
-    "level": 5,
-    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//완벽한 정답이 아닙니다.\n// 1 - 본인의 깃허브 아이디\nfunction solution(n) {\n    //프로그래머스에 제출하여 통과된 함수를 복사 붙여넣기 해주세요!\n}\n\n"
+    "code": "//https://github.com/codeisneverodd/programmers-coding-test\n//완벽한 정답이 아닙니다.\n// 1 - codeisneverodd\n//코드 참고자료: https://velog.io/@longroadhome/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-LV.4-%EB%8B%A8%EC%96%B4-%ED%8D%BC%EC%A6%90\nfunction solution(strs, t) {\n  const tLength = t.length; //자주 쓰는 값 미리 계산\n  //Infinity 로 선언을 해야 조합이 불가능한 영역의 값을 무한으로 두고, 그 영역에 하나를 더해도 불가능하다는 것을 Infinity로 표현할 수 있게 된다.\n  const minCountToIndex = new Array(tLength).fill(Infinity);\n  for (let currentIndex = 0; currentIndex < tLength; currentIndex++) {\n    //내가 검사할 부분은 t의 0~currentIndex 영역\n    const currentSlice = t.slice(0, currentIndex + 1);\n    for (const str of strs) {\n      //현재 영역이 strs에 있는 조각들 중 하나로 끝난다면\n      if (currentSlice.endsWith(str)) {\n        //frontLength 는 str 조각을 제외한 앞 쪽의 남은 조각의 길이\n        const frontLength = currentIndex - str.length + 1;\n        if (frontLength === 0) {\n          //앞쪽에 남은 것이 없다면, 현재 검사중인 영역 = strs에 있는 조각\n          minCountToIndex[currentIndex] = 1;\n        } else {\n          //앞쪽에 남은 것이 있다면, 현재 검사중이 영역까지 필요한 조각 수는, 지금까지 구한 최소 값과 지금 구한 값 중 최소값\n          minCountToIndex[currentIndex] = Math.min(minCountToIndex[currentIndex], minCountToIndex[frontLength - 1] + 1);\n        }\n      }\n    }\n  }\n  //마지막 영역이 Infinity 이면 만들기 불가능한 단어, 아니라면 마지막 영역의 값을 리턴\n  return minCountToIndex[tLength - 1] === Infinity ? -1 : minCountToIndex[tLength - 1];\n}\n\n//리드미 테스트용 코멘트\n"
   }
 ]

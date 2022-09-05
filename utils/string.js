@@ -41,7 +41,7 @@ export function getInfoList(levelNumber) {
   const files = JSON.parse(fs.readFileSync('api.json'));
   return files
     .filter(v => v.level === levelNumber)
-    .map(({ name, level }) => ({
+    .map(({ name, level, id }) => ({
       title: name,
       link: `https://school.programmers.co.kr/learn/courses/30/lessons/${id}`,
       fileName: name,
