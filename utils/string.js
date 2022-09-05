@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import path from 'path';
+import { makeAPI } from './api.js';
 import fetchTitleLink from './fetch.js';
 
 const __dirname = path.resolve();
@@ -38,7 +39,7 @@ function getTitle(fileName) {
 }
 
 export function getInfoList(levelNumber) {
-  const files = JSON.parse(fs.readFileSync('api.json'));
+  const files = getSolutions();
   return files
     .filter(v => v.level === levelNumber)
     .map(({ name, level, id }) => ({
@@ -59,7 +60,9 @@ export function getInfoList(levelNumber) {
 
 function makeReadmeStr(infoItem, index) {
   const { title, link, fileName, levelNumber } = infoItem;
-  const codeLink = `https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-${levelNumber}/${fileName}`;
+  const codeLink = `https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-${levelNumber}/${fileName
+    .split(' ')
+    .join('-')}`;
   return `| ${index + 1} | [${title}](${link}) | [${fileName}](${codeLink}) |`;
 }
 
