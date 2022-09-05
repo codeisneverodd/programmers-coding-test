@@ -5,7 +5,7 @@ const generateTables = () => {
   return [1, 2, 3, 4, 5].map(level =>
     files
       .filter(file => file.level === level)
-      .map(({ level, fileName, name, fileLink }, index) => {
+      .map(({ level, fileName, name, link }, index) => {
         const fileLink = `https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-${level}/${fileName}`;
         return `| ${index + 1} | [${name}](${link}) | [${name}.js](${fileLink}) |`;
       })
