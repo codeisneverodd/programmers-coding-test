@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import path from 'path';
-import { getSolutions } from './api.js';
+import { generateAPI } from './api.js';
 import fetchTitleLink from './fetch.js';
 
 const __dirname = path.resolve();
@@ -39,31 +39,16 @@ function getTitle(fileName) {
 }
 
 export function getInfoList(levelNumber) {
-  const files = getSolutions();
-  return files
-    .filter(v => v.level === levelNumber)
-    .map(({ name, level, id }) => ({
-      title: name,
-      link: `https://school.programmers.co.kr/learn/courses/30/lessons/${id}`,
-      fileName: name,
-      levelNumber: level,
-    }));
-  const levelDir = path.resolve(__dirname, `./level-${levelNumber}`);
-  const fileNameList = getFileNameList(levelDir);
-  const infoList = fileNameList.map(fileName => {
-    const title = getTitle(fileName);
-    const link = 'https://school.programmers.co.kr/' + titleLinkObject[title];
-    return { title, link, fileName, levelNumber };
-  });
-  return infoList;
+  const files = generateAPI();
+  return files.filter(v => v.level === levelNumber);
 }
 
 function makeReadmeStr(infoItem, index) {
-  const { title, link, fileName, levelNumber } = infoItem;
-  const codeLink = `https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-${levelNumber}/${fileName
+  const { name, link, fileName, level } = infoItem;
+  const codeLink = `https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-${level}/${fileName
     .split(' ')
     .join('-')}`;
-  return `| ${index + 1} | [${title}](${link}) | [${fileName}](${codeLink}) |`;
+  return `| ${index + 1} | [${name}](${link}) | [${name}.js](${codeLink}) |`;
 }
 
 export function getTableStr(levelNumber) {
