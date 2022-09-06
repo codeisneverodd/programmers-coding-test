@@ -1,6 +1,6 @@
 //https://github.com/codeisneverodd/programmers-coding-test
 //더 좋은 풀이가 존재할 수 있습니다.
-//정답 1 - 본인의 깃허브 아이디
+//정답 1 - codeisneverodd
 function solution(arr) {
   const quad = matrix => {
     const length = matrix.length;
