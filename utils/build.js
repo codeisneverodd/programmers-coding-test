@@ -13,8 +13,7 @@ const updateData = `# 프로그래머스 모든 문제 풀이
 - ⭐ **도움이 되셨다면** 오른쪽 상단 ↗ 의 ⭐️ **Star를 클릭**해 이 프로젝트를 응원해주세요!
 
 ## 👻 [크롬익스텐션](https://chrome.google.com/webstore/detail/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%95%EB%8B%B5-%ED%86%B5%EA%B3%BC%EA%B8%B0/pogpgnlafgchgebcnohihjjmdjcffenl?hl=ko) 이 출시되었습니다 🎉🎉
-- 😆 다운로드 👉 [프로그래머스 정답 통과기 - 크롬 웹 스토어](https://chrome.google.com/webstore/detail/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%95%EB%8B%B5-%ED%86%B5%EA%B3%BC%EA%B8%B0/pogpgnlafgchgebcnohihjjmdjcffenl?hl=ko)
-- 🎉 출시 이벤트(~ 9/5): 리뷰를 남기신 분들 중 희망하는 분들께 1대1 커피챗(10분 내외, 온라인)을 제공합니다! 리뷰를 남기고 캡쳐와 함께 codeisneverodd@gmail.com 로 연락주세요! 😁 
+- 😆 무료 다운로드 👉 [프로그래머스 정답 통과기 - 크롬 웹 스토어](https://chrome.google.com/webstore/detail/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%95%EB%8B%B5-%ED%86%B5%EA%B3%BC%EA%B8%B0/pogpgnlafgchgebcnohihjjmdjcffenl?hl=ko)
 
 [![extensionIntro](https://user-images.githubusercontent.com/54318460/187886360-dd8f917e-4ffe-4c6f-9b3c-d10a69b5f46e.gif)](https://chrome.google.com/webstore/detail/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A0%95%EB%8B%B5-%ED%86%B5%EA%B3%BC%EA%B8%B0/pogpgnlafgchgebcnohihjjmdjcffenl?hl=ko)
 
@@ -33,7 +32,7 @@ const updateData = `# 프로그래머스 모든 문제 풀이
 
 ### Level 1 ✅
 
-- 전체 문제 수: 56문제
+- 전체 문제 수: 57문제
 - 풀이 문제 수: ${getInfoList(1).length}문제
 
 | 번호 | 문제 출처 | 풀이 |
@@ -42,7 +41,7 @@ ${getTableStr(1)}
 
 ### Level 2 👨🏻‍💻(풀이 중..)
 
-- 전체 문제 수: 65문제
+- 전체 문제 수: 70문제
 - 풀이 문제 수: ${getInfoList(2).length}문제
 
 | 번호 | 문제 출처 | 풀이 |
