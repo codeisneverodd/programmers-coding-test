@@ -14,7 +14,7 @@ export default async function fetchTitleLink() {
   const lesson = {};
 
   $('.lesson-title').each(function (index, el) {
-    const title = $(el).children('span').text();
+    const title = $(el).children('span').text().trim();
     const link = $(el).attr('href');
     lesson[title] = link;
   });

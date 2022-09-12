@@ -1,10 +1,19 @@
-import * as fs from 'fs';
-import path from 'path';
-import { getTableStr, getInfoList } from './string.js';
+import fs from 'fs';
+import { generateAPI } from './api.js';
+const generateTables = () => {
+  const files = generateAPI();
+  return [1, 2, 3, 4, 5].map(level =>
+    files
+      .filter(file => file.level === level)
+      .map(({ level, fileName, name, link }, index) => {
+        const fileLink = `https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-${level}/${fileName}`;
+        return `| ${index + 1} | [${name}](${link}) | [${name}.js](${fileLink}) |`;
+      })
+  );
+};
+const tables = generateTables();
 
-const __dirname = path.resolve();
-const FILE_TO_UPDATE = path.resolve(__dirname, './README.md');
-const updateData = `# 프로그래머스 모든 문제 풀이
+const newREADME = `# 프로그래머스 모든 문제 풀이
 [![방문자수](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/codeisneverodd/programmers-coding-test&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=방문자수(Today/Total)&edge_flat=true)](https://github.com/codeisneverodd)
 ## 👋 소개
 - 🌱 모든 문제는 JavaScript로 풀이되고 다양한 사람의 풀이가 올라와있어요
@@ -33,47 +42,47 @@ const updateData = `# 프로그래머스 모든 문제 풀이
 ### Level 1 ✅
 
 - 전체 문제 수: 57문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: ${getInfoList(1).length}문제
+- 풀이 문제 수: ${tables[0].length}문제
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
-${getTableStr(1)}
+${tables[0].join('\n')}
 
 ### Level 2  ✅
 
 - 전체 문제 수: 72문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: ${getInfoList(2).length}문제
+- 풀이 문제 수: ${tables[1].length}문제
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
-${getTableStr(2)}
+${tables[1].join('\n')}
 
 ### Level 3 👨🏻‍💻(풀이 중..)
 
 - 전체 문제 수: 51문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: ${getInfoList(3).length}문제
+- 풀이 문제 수: ${tables[2].length}문제
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
-${getTableStr(3)}
+${tables[2].join('\n')}
 
 ### Level 4
 
 - 전체 문제 수: 19문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: ${getInfoList(4).length}문제
+- 풀이 문제 수: ${tables[3].length}문제
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
-${getTableStr(4)}
+${tables[3].join('\n')}
 
 ### Level 5
 
 - 전체 문제 수: 6문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: ${getInfoList(5).length}문제
+- 풀이 문제 수: ${tables[4].length}문제
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
-${getTableStr(5)}
+${tables[4].join('\n')}
 
 ## 🙏🏻 아직 풀리지 않은 문제의 해답을 추가해 주세요!
 ### 커밋 컨벤션
@@ -106,4 +115,4 @@ ${getTableStr(5)}
 를 명시하여야합니다.
 `;
 
-fs.writeFileSync(FILE_TO_UPDATE, updateData, 'utf-8');
+fs.writeFileSync('./README.md', newREADME, 'utf-8');
