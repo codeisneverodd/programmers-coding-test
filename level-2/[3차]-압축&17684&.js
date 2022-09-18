@@ -31,3 +31,52 @@ function solution(msg) {
   }
   return outputs;
 }
+
+// 정답 2 - ssi02014
+function solution(msg) {
+  const result = [];
+  const dict = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+  ];
+
+  // 시간 복잡도 O(N^2)
+  const lastWordAndCompression = msg.split("").reduce((acc, cur) => {
+    const nextWord = acc + cur;
+    const nextWordIdx = dict.indexOf(nextWord);
+    const prevWordIdx = dict.indexOf(acc);
+
+    if (nextWordIdx !== -1) return acc + cur;
+    dict.push(nextWord);
+
+    if (prevWordIdx !== -1) result.push(prevWordIdx + 1);
+    return cur;
+  }, "");
+
+  result.push(dict.indexOf(lastWordAndCompression) + 1);
+  return result;
+}
