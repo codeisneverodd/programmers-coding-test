@@ -35,34 +35,7 @@ function solution(msg) {
 // 정답 2 - ssi02014
 function solution(msg) {
   const result = [];
-  const dict = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "I",
-    "J",
-    "K",
-    "L",
-    "M",
-    "N",
-    "O",
-    "P",
-    "Q",
-    "R",
-    "S",
-    "T",
-    "U",
-    "V",
-    "W",
-    "X",
-    "Y",
-    "Z",
-  ];
+  const dict = Array.from({length: 26},(_, i) => String.fromCharCode(65 + i))
 
   // 시간 복잡도 O(N^2)
   const lastWordAndCompression = msg.split("").reduce((acc, cur) => {
