@@ -44,3 +44,18 @@ function solution(s) {
   // (길이가 4 혹은 6이고, 숫자로만 구성되어 있으면) true 반환
   return true;
 }
+
+//정답 5 - soulhn
+function solution(s) {
+  // 길이가 4이거나 6인지 확인
+  if (s.length === 4 || s.length === 6) {
+    //배열로 변환, Int로 변환, 배열 내부에 NaN이 있는지 확인 
+    //NaN이 존재하면 true 반환이기에 ! 이용하여 false 반환
+    return !s
+      .split("")
+      .map((i) => parseInt(i, 10))
+      .includes(NaN);
+  } else { //길이가 4, 6이 아니면 false 반환
+    return false;
+  }
+}
