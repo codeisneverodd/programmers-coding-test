@@ -56,7 +56,7 @@
 | 23 | [성격 유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666) | [성격 유형 검사하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/성격-유형-검사하기&118666&.js) |
 | 24 | [소수 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12977) | [소수 만들기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/소수-만들기&12977&.js) |
 | 25 | [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/42839) | [소수 찾기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/소수-찾기&42839&.js) |
-| 26 | [수박수박수박수박수박수?](https://school.programmers.co.kr/learn/courses/30/lessons/12922) | [수박수박수박수박수박수?.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/수박수박수박수박수박수?&12922&.js) |
+| 26 | [수박수박수박수박수박수?](https://school.programmers.co.kr/learn/courses/30/lessons/12922) | [수박수박수박수박수박수?.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/수박수박수박수박수박수&#63;&12922&.js) |
 | 27 | [숫자 문자열과 영단어](https://school.programmers.co.kr/learn/courses/30/lessons/81301) | [숫자 문자열과 영단어.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/숫자-문자열과-영단어&81301&.js) |
 | 28 | [시저 암호](https://school.programmers.co.kr/learn/courses/30/lessons/12926) | [시저 암호.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/시저-암호&12926&.js) |
 | 29 | [신고 결과 받기](https://school.programmers.co.kr/learn/courses/30/lessons/92334) | [신고 결과 받기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/신고-결과-받기&92334&.js) |
