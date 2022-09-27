@@ -47,15 +47,8 @@ function solution(s) {
 
 //정답 5 - soulhn
 function solution(s) {
-  // 길이가 4이거나 6인지 확인
-  if (s.length === 4 || s.length === 6) {
-    //배열로 변환, Int로 변환, 배열 내부에 NaN이 있는지 확인 
-    //NaN이 존재하면 true 반환이기에 ! 이용하여 false 반환
-    return !s
-      .split("")
-      .map((i) => parseInt(i, 10))
-      .includes(NaN);
-  } else { //길이가 4, 6이 아니면 false 반환
-    return false;
-  }
+  if (s.length !== 4 && s.length !== 6) return false;
+  return !s.split("").some((i) => isNaN(parseInt(i, 10))); 
+   //early return 제외사항 먼저 처리
+  //.split 문자열 배열로 변환, .some을 이용하여 isNaN인지 판별, ! 사용하여 문제 조건에 맞게 반환
 }
