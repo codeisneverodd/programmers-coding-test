@@ -1,19 +1,108 @@
+//변동 사항이 있으면 => README UPDATE, 형식 맞지 않는 것 rename
+import * as cheerio from 'cheerio';
+import fetch from 'node-fetch';
 import fs from 'fs';
-import { generateAPI } from './api.js';
-const generateTables = () => {
-  const files = generateAPI();
-  return [1, 2, 3, 4, 5].map(level =>
-    files
-      .filter(file => file.level === level)
-      .map(({ level, fileName, name, link }, index) => {
-        const fileLink = `https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-${level}/${fileName}`;
-        return `| ${index + 1} | [${name}](${link}) | [${name}.js](${fileLink}) |`;
-      })
-  );
-};
-const tables = generateTables();
 
-const newREADME = `# 프로그래머스 모든 문제 풀이
+const COURSE_URL = 'https://programmers.co.kr/learn/courses/30';
+const levels = [1, 2, 3, 4, 5];
+
+const createAPI = () => {
+  const splitCodeToSolutions = code => {
+    if (code === undefined) return [];
+    const solutions = code.split(/\/\/[ ]*정답/);
+    return [solutions[0], ...solutions.slice(1).map(solution => '//' + solution)];
+  };
+
+  const formatName = (() => {
+    const nameExceptions = [
+      ['-', ' '],
+      ['&#63;', '?'],
+    ];
+
+    return name => {
+      nameExceptions.forEach(([a, b]) => (name = name.replaceAll(a, b)));
+      return name;
+    };
+  })();
+
+  const nameExceptions = ['00-해답-예시.js'];
+
+  try {
+    return levels.flatMap(level =>
+      fs
+        .readdirSync(`level-${level}`)
+        .filter(name => !nameExceptions.includes(name))
+        .map(fileName => {
+          const [name, id, extension] = formatName(fileName).split('&');
+          const code = splitCodeToSolutions(fs.readFileSync(`level-${level}/${fileName}`, 'utf-8'));
+          return {
+            id,
+            name,
+            fileName,
+            level,
+            code: code[0] + code[1],
+            link: `https://school.programmers.co.kr/learn/courses/30/lessons/${id}`,
+          };
+        })
+    );
+  } catch (e) {
+    return [];
+  }
+};
+
+const rename = pages => {
+  const formatName = name => {
+    const nameExceptions = [
+      [' ', '-'],
+      ['?', '&#63;'],
+    ];
+    nameExceptions.forEach(([a, b]) => (name = name.replaceAll(a, b)));
+    return name;
+  };
+
+  levels.forEach(level => {
+    const files = fs.readdirSync(`level-${level}`);
+    pages.forEach(({ title, link }) => {
+      const id = link.split('/').at(-1);
+      const inValidName = `${formatName(title)}.js`;
+
+      if (!files.includes(inValidName)) return;
+
+      const validName = `${formatName(title)}&${id}&.js`;
+
+      if (!files.includes(validName))
+        fs.renameSync(`level-${level}/${inValidName}`, `level-${level}/${validName}`, err => {
+          console.log(err);
+        });
+    });
+  });
+};
+
+const fetchPages = async () => {
+  const $ = cheerio.load(await (await fetch(COURSE_URL)).text());
+  const pages = [];
+  $('.lesson-title').each((i, $node) => {
+    const title = $($node).children('span').text().trim();
+    const link = $($node).attr('href');
+    pages.push({ title, link });
+  });
+
+  return pages;
+};
+
+const createREADME = api => {
+  const solutions = api.reduce((acc, curr) => {
+    const { level, name, link, fileName } = curr;
+    const fileLink = `https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-${level}/${fileName}`;
+    return { ...acc, [level]: acc[level] ? [...acc[level], { name, link, fileLink }] : [{ name, link, fileLink }] };
+  }, {});
+  const createTable = solutionArr =>
+    solutionArr
+      .map(({ name, link, fileLink }, i) => `| ${i + 1} | [${name}](${link}) | [${name}.js](${fileLink}) |`)
+      .join('\n');
+
+  const readme = `
+# 프로그래머스 모든 문제 풀이
 [![방문자수](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/codeisneverodd/programmers-coding-test&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=방문자수(Today/Total)&edge_flat=true)](https://github.com/codeisneverodd)
 ## 👋 소개
 - 🌱 모든 문제는 JavaScript로 풀이되고 다양한 사람의 풀이가 올라와있어요
@@ -28,7 +117,7 @@ const newREADME = `# 프로그래머스 모든 문제 풀이
 
 
 ## 📢 공지
-- 🔥 본 레퍼지토리에 본인의 해설을 PR을 통해 기여하면, 코드리뷰를 받아보실 수 있습니다. (기한: 2022/9/30)
+- 🔥 본 레퍼지토리에 본인의 해설을 PR을 통해 기여하면, 코드리뷰를 받아보실 수 있습니다. (기한: 2022/10/31)
 - 기여 방법은 README 최하단을 참고해주세요.
 
 ## 🤔 다른 사람의 풀이가 왜 중요한가요?
@@ -39,50 +128,24 @@ const newREADME = `# 프로그래머스 모든 문제 풀이
 ## 🌟 Contributors
 [![contributors](https://contrib.rocks/image?repo=codeisneverodd/programmers-coding-test)](https://github.com/codeisneverodd/programmers-coding-test/graphs/contributors)
 
-### Level 1 ✅
+## 💡 Solutions
 
-- 전체 문제 수: 57문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: ${tables[0].length}문제
+${Object.entries(solutions)
+  .map(
+    ([level, arr]) =>
+      `
+### 🌱 Level ${level} 
 
-| 번호 | 문제 출처 | 풀이 |
-| --- | ------- | --- |
-${tables[0].join('\n')}
-
-### Level 2  ✅
-
-- 전체 문제 수: 72문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: ${tables[1].length}문제
+- 풀이 문제 수: ${arr.length}문제
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
-${tables[1].join('\n')}
+${createTable(arr)}
 
-### Level 3 👨🏻‍💻(풀이 중..)
+`
+  )
+  .join('')}
 
-- 전체 문제 수: 51문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: ${tables[2].length}문제
-
-| 번호 | 문제 출처 | 풀이 |
-| --- | ------- | --- |
-${tables[2].join('\n')}
-
-### Level 4
-
-- 전체 문제 수: 19문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: ${tables[3].length}문제
-
-| 번호 | 문제 출처 | 풀이 |
-| --- | ------- | --- |
-${tables[3].join('\n')}
-
-### Level 5
-
-- 전체 문제 수: 6문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: ${tables[4].length}문제
-
-| 번호 | 문제 출처 | 풀이 |
-| --- | ------- | --- |
-${tables[4].join('\n')}
 
 ## 🙏🏻 아직 풀리지 않은 문제의 해답을 추가해 주세요!
 ### 커밋 컨벤션
@@ -115,4 +178,17 @@ ${tables[4].join('\n')}
 를 명시하여야합니다.
 `;
 
-fs.writeFileSync('./README.md', newREADME, 'utf-8');
+  return readme.trim();
+};
+
+const build = async () => {
+  const oldAPI = JSON.parse(fs.readFileSync('api.json'));
+  const newAPI = createAPI();
+
+  if (oldAPI.length === newAPI.length) return;
+
+  rename(await fetchPages());
+  fs.writeFileSync('./README.md', createREADME(newAPI), 'utf-8');
+};
+
+build();
