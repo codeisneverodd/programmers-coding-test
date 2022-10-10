@@ -1,6 +1,7 @@
-import fetchTitleLink from './fetch.js';
+import fetchTitleLink, { fetchLevel0 } from './fetch.js';
 import fs from 'fs';
-const possibleLevels = [1, 2, 3, 4, 5];
+
+const possibleLevels = [0, 1, 2, 3, 4, 5];
 const nameExceptions = [
   [' ', '-'],
   ['?', '&#63;'],
@@ -29,6 +30,29 @@ const renameFileNamesWithID = (() => {
     });
   };
 })();
+const makeFileLevel0 = (() => {
+  const formatName = name => {
+    nameExceptions.forEach(([a, b]) => (name = name.replaceAll(a, b)));
+    return name;
+  };
+
+  return lessons => {
+    const files = fs.readdirSync(`level-${0}`);
+
+    Object.entries(lessons).forEach(([title, link]) => {
+      const id = link.split('/').at(-1);
+      const newName = `${formatName(title)}&${id}&.js`;
+      const string = `//https://github.com/codeisneverodd/programmers-coding-test\n//완벽한 정답이 아닙니다.\n//정답 1 - codeisneverodd\nfunction solution(n) {\n//프로그래머스에 제출하여 통과된 함수를 복사 붙여넣기 해주세요!\n}`;
+
+      if (!files.includes(newName)) {
+        fs.writeFileSync(`level-${0}/${newName}`, string, err => {
+          console.log(err);
+          0;
+        });
+      }
+    });
+  };
+})();
 
 const renameInvalid = () => {
   possibleLevels.forEach(level => {
@@ -47,6 +71,7 @@ const renameInvalid = () => {
 };
 
 const titleLinkObject = await fetchTitleLink();
+const level0 = await fetchLevel0();
 
 renameFileNamesWithID(titleLinkObject);
 renameInvalid();

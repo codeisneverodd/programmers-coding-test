@@ -20,7 +20,7 @@ export const generateAPI = (() => {
 
   return () => {
     try {
-      const api = [1, 2, 3, 4, 5].flatMap(level =>
+      const api = [0, 1, 2, 3, 4, 5].flatMap(level =>
         fs
           .readdirSync(`level-${level}`)
           .filter(name => name !== '00-해답-예시.js')

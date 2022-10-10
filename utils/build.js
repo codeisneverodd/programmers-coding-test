@@ -2,7 +2,7 @@ import fs from 'fs';
 import { generateAPI } from './api.js';
 const generateTables = () => {
   const files = generateAPI();
-  return [1, 2, 3, 4, 5].map(level =>
+  return [0,1, 2, 3, 4, 5].map(level =>
     files
       .filter(file => file.level === level)
       .map(({ level, fileName, name, link }, index) => {

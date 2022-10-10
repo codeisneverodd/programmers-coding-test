@@ -20,3 +20,16 @@ export default async function fetchTitleLink() {
   });
   return lesson;
 }
+
+export  async function fetchLevel0(){
+  const body = await fetchBody();
+  const $ = cheerio.load(body)
+  const lesson = {};
+
+  $('.part[data-id="33882"]  .lesson-title').each((_,el)=>{
+    const title = $(el).children('span').text().trim();
+    const link = $(el).attr('href')
+    lesson[title] = link;
+  })
+  return lesson;
+}
