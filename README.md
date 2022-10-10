@@ -13,7 +13,7 @@
 
 
 ## 📢 공지
-- 🔥 본 레퍼지토리에 본인의 해설을 PR을 통해 기여하면, 코드리뷰를 받아보실 수 있습니다. (기한: 2022/9/30)
+- 🔥 본 레퍼지토리에 본인의 해설을 PR을 통해 기여하면, 코드리뷰를 받아보실 수 있습니다. (기한: 2022/10/31)
 - 기여 방법은 README 최하단을 참고해주세요.
 
 ## 🤔 다른 사람의 풀이가 왜 중요한가요?
@@ -24,9 +24,11 @@
 ## 🌟 Contributors
 [![contributors](https://contrib.rocks/image?repo=codeisneverodd/programmers-coding-test)](https://github.com/codeisneverodd/programmers-coding-test/graphs/contributors)
 
-### Level 1 ✅
+## 💡 Solutions
 
-- 전체 문제 수: 57문제(레벨 변동에 따라 차이가 있을 수 있습니다)
+
+### 🌱 Level 1 
+
 - 풀이 문제 수: 56문제
 
 | 번호 | 문제 출처 | 풀이 |
@@ -88,9 +90,9 @@
 | 55 | [핸드폰 번호 가리기](https://school.programmers.co.kr/learn/courses/30/lessons/12948) | [핸드폰 번호 가리기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/핸드폰-번호-가리기&12948&.js) |
 | 56 | [행렬의 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/12950) | [행렬의 덧셈.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/행렬의-덧셈&12950&.js) |
 
-### Level 2  ✅
 
-- 전체 문제 수: 72문제(레벨 변동에 따라 차이가 있을 수 있습니다)
+### 🌱 Level 2 
+
 - 풀이 문제 수: 72문제
 
 | 번호 | 문제 출처 | 풀이 |
@@ -168,9 +170,9 @@
 | 71 | [행렬의 곱셈](https://school.programmers.co.kr/learn/courses/30/lessons/12949) | [행렬의 곱셈.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/행렬의-곱셈&12949&.js) |
 | 72 | [후보키](https://school.programmers.co.kr/learn/courses/30/lessons/42890) | [후보키.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-2/후보키&42890&.js) |
 
-### Level 3 👨🏻‍💻(풀이 중..)
 
-- 전체 문제 수: 51문제(레벨 변동에 따라 차이가 있을 수 있습니다)
+### 🌱 Level 3 
+
 - 풀이 문제 수: 9문제
 
 | 번호 | 문제 출처 | 풀이 |
@@ -185,22 +187,16 @@
 | 8 | [이중우선순위큐](https://school.programmers.co.kr/learn/courses/30/lessons/42628) | [이중우선순위큐.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/이중우선순위큐&42628&.js) |
 | 9 | [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) | [입국심사.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-3/입국심사&43238&.js) |
 
-### Level 4
 
-- 전체 문제 수: 19문제(레벨 변동에 따라 차이가 있을 수 있습니다)
+### 🌱 Level 4 
+
 - 풀이 문제 수: 1문제
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
 | 1 | [단어 퍼즐](https://school.programmers.co.kr/learn/courses/30/lessons/12983) | [단어 퍼즐.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-4/단어-퍼즐&12983&.js) |
 
-### Level 5
 
-- 전체 문제 수: 6문제(레벨 변동에 따라 차이가 있을 수 있습니다)
-- 풀이 문제 수: 0문제
-
-| 번호 | 문제 출처 | 풀이 |
-| --- | ------- | --- |
 
 
 ## 🙏🏻 아직 풀리지 않은 문제의 해답을 추가해 주세요!
