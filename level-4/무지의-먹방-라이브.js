@@ -8,11 +8,11 @@ function solution(food_times, k) {
   }
 
   // stack으로 풀기
-  const stack = food_times.map((time, i) => [time, i + 1]).sort((a, b) => b[0] - a[0])
+  const stack = food_times.map((time, i) => [time, i + 1]).sort(([timeA], [timeB]) => timeB - timeA)
 
   let prev = 0
   while (stack.length > 0 && k >= 0) {
-    const time = stack[stack.length - 1][0]
+    const [time] = stack[stack.length - 1]
     const acc = (time - prev) * stack.length
     if (k < acc) {
       break
@@ -24,7 +24,7 @@ function solution(food_times, k) {
 
   const result = stack
     .reverse()
-    .map((item) => item[1])
-    .sort((a, b) => a - b)
+    .map(([_, order]) => order)
+    .sort((orderA, orderB) => orderA - orderB)
   return result[k % result.length]
 }
