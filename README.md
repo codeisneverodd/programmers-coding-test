@@ -299,12 +299,14 @@
 
 ### 🌱 Level 4 
 
-- 풀이 문제 수: 2문제
+- 풀이 문제 수: 4문제
 
 | 번호 | 문제 출처 | 풀이 |
 | --- | ------- | --- |
-| 1 | [단어 퍼즐](https://school.programmers.co.kr/learn/courses/30/lessons/12983) | [단어 퍼즐.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-4/단어-퍼즐&12983&.js) |
-| 2 | [올바른 괄호의 갯수](https://school.programmers.co.kr/learn/courses/30/lessons/12929) | [올바른 괄호의 갯수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-4/올바른-괄호의-갯수&12929&.js) |
+| 1 | [가사 검색.js](https://school.programmers.co.kr/learn/courses/30/lessons/undefined) | [가사 검색.js.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-4/가사-검색.js) |
+| 2 | [단어 퍼즐](https://school.programmers.co.kr/learn/courses/30/lessons/12983) | [단어 퍼즐.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-4/단어-퍼즐&12983&.js) |
+| 3 | [무지의 먹방 라이브.js](https://school.programmers.co.kr/learn/courses/30/lessons/undefined) | [무지의 먹방 라이브.js.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-4/무지의-먹방-라이브.js) |
+| 4 | [올바른 괄호의 갯수](https://school.programmers.co.kr/learn/courses/30/lessons/12929) | [올바른 괄호의 갯수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-4/올바른-괄호의-갯수&12929&.js) |
 
 
 
