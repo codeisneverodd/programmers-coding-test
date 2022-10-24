@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 import fs from 'fs';
 
 const COURSE_URL = 'https://programmers.co.kr/learn/courses/30';
-const levels = [1, 2, 3, 4, 5];
+const levels = [0, 1, 2, 3, 4, 5];
 
 const createAPI = () => {
   const splitCodeToSolutions = code => {
