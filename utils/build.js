@@ -188,6 +188,7 @@ const build = async () => {
   if (oldAPI.length === newAPI.length) return;
 
   rename(await fetchPages());
+  fs.writeFileSync('./api.json', JSON.stringify(newAPI), 'utf-8');
   fs.writeFileSync('./README.md', createREADME(newAPI), 'utf-8');
 };
 
