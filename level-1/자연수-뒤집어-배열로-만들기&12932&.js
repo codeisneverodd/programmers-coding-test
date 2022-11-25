@@ -64,3 +64,11 @@ function solution(n) {
   }
   return answer;
 }
+
+// 정답 7 - inhwa-jang
+function solution(n) {
+    let str = String(n);
+    let newArr = Array.from(str);
+    newArr.reverse();
+    return newArr.map(Number);
+}
