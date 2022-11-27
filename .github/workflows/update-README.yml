@@ -1,0 +1,40 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: update README.md
+
+on:
+  push:
+    branches:
+      - main
+      - feat/id-based-parsing
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16.14.0
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.14.0
+          cache: "npm"
+      - name: install package
+        run: npm install
+      - name: build README.md
+        run: npm run build
+      - name: get diff
+        id: get_diff
+        run: |
+          git diff --quiet ./README.md || echo "::set-output name=new_changes_exist::true"
+      - name: update README.md
+        if: steps.get_diff.outputs.new_changes_exist == 'true'
+        run: |
+          git add ./README.md
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -m "Automatic Update README.md"
+          git push

@@ -1,4 +1,5 @@
 
+README.md
 # Created by https://www.toptal.com/developers/gitignore/api/macos,webstorm
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,webstorm
 
@@ -147,6 +148,5 @@ fabric.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,webstorm
 /references/
-/package.json
-/package-lock.json
 /node_modules/
+/test/

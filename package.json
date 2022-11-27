@@ -1,0 +1,33 @@
+{
+  "name": "programmers-coding-test",
+  "version": "1.0.0",
+  "description": "🌱 프로그래머스의 [코딩테스트 문제]",
+  "type": "module",
+  "scripts": {
+    "build": "node ./utils/build.js",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeisneverodd/programmers-coding-test.git"
+  },
+  "author": "cruelladevil <dev.timetravel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeisneverodd/programmers-coding-test/issues"
+  },
+  "homepage": "https://github.com/codeisneverodd/programmers-coding-test#readme",
+  "dependencies": {
+    "axios": "^1.1.2",
+    "cheerio": "^1.0.0-rc.10",
+    "node-fetch": "^3.2.3",
+    "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
