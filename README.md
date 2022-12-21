@@ -197,7 +197,7 @@
 | 53 | [키패드 누르기](https://school.programmers.co.kr/learn/courses/30/lessons/67256) | [키패드 누르기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/키패드-누르기&67256&.js) |
 | 54 | [평균 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/12944) | [평균 구하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/평균-구하기&12944&.js) |
 | 55 | [폰켓몬](https://school.programmers.co.kr/learn/courses/30/lessons/1845) | [폰켓몬.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/폰켓몬&1845&.js) |
-| 56 | [푸드파이터 대회.js](https://school.programmers.co.kr/learn/courses/30/lessons/undefined) | [푸드파이터 대회.js.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/푸드파이터 대회.js) |
+| 56 | [푸드파이터 대회.js](https://school.programmers.co.kr/learn/courses/30/lessons/undefined) | [푸드파이터 대회.js.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/푸드파이터-대회.js) |
 | 57 | [하샤드 수](https://school.programmers.co.kr/learn/courses/30/lessons/12947) | [하샤드 수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/하샤드-수&12947&.js) |
 | 58 | [핸드폰 번호 가리기](https://school.programmers.co.kr/learn/courses/30/lessons/12948) | [핸드폰 번호 가리기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/핸드폰-번호-가리기&12948&.js) |
 | 59 | [행렬의 덧셈](https://school.programmers.co.kr/learn/courses/30/lessons/12950) | [행렬의 덧셈.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/행렬의-덧셈&12950&.js) |
