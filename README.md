@@ -156,7 +156,7 @@
 | 12 | [두 개 뽑아서 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/68644) | [두 개 뽑아서 더하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/두-개-뽑아서-더하기&68644&.js) |
 | 13 | [두 정수 사이의 합](https://school.programmers.co.kr/learn/courses/30/lessons/12912) | [두 정수 사이의 합.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/두-정수-사이의-합&12912&.js) |
 | 14 | [로또의 최고 순위와 최저 순위](https://school.programmers.co.kr/learn/courses/30/lessons/77484) | [로또의 최고 순위와 최저 순위.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/로또의-최고-순위와-최저-순위&77484&.js) |
-| 15 | [명예의 전당(1).js](https://school.programmers.co.kr/learn/courses/30/lessons/undefined) | [명예의 전당(1).js.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/명예의 전당(1).js) |
+| 15 | [명예의 전당(1).js](https://school.programmers.co.kr/learn/courses/30/lessons/undefined) | [명예의 전당(1).js.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/명예의-전당(1).js) |
 | 16 | [모의고사](https://school.programmers.co.kr/learn/courses/30/lessons/42840) | [모의고사.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/모의고사&42840&.js) |
 | 17 | [문자열 내 p와 y의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/12916) | [문자열 내 p와 y의 개수.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/문자열-내-p와-y의-개수&12916&.js) |
 | 18 | [문자열 내 마음대로 정렬하기](https://school.programmers.co.kr/learn/courses/30/lessons/12915) | [문자열 내 마음대로 정렬하기.js](https://github.com/codeisneverodd/programmers-coding-test/blob/main/level-1/문자열-내-마음대로-정렬하기&12915&.js) |
