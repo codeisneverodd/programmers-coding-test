@@ -21,3 +21,34 @@ function solution(n, k) {
     // .filter((number) => isPrime(+number)).length // 소수가 아닌 요소를 걸러낸 후에 개수를 셉니다.
     return (n).toString(k).split('0').filter((number) => isPrime(+number)).length;
 }
+
+
+// 정답 2 - ryna-dia
+
+function solution(n, k) {
+  const numbers = n;
+  const antilogarithm = k;
+  const NumbersChangedAntilogarithm = numbers.toString(antilogarithm);
+  const result = selectPrimeNotIncludeZero(NumbersChangedAntilogarithm);
+
+  return result.length;
+}
+
+function selectPrimeNotIncludeZero(numbers, numbersWithoutZero = '') {
+  return [...numbers].reduce((acc, cur, index, arr) => {
+    if (cur !== '0') numbersWithoutZero += cur;
+    if (cur === '0' || index === arr.length - 1) {
+      if (isPrime(Number(numbersWithoutZero))) acc.push(numbersWithoutZero);
+      numbersWithoutZero = '';
+    }
+    return acc;
+  }, []);
+}
+
+function isPrime(num) {
+  if (!num || num === 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (!(num % i)) return false;
+  }
+  return true;
+}
