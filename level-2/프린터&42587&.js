@@ -134,3 +134,24 @@ class Queue {
         return this.rear - this.front
     }
 }
+
+// 정답 6 ryan-dia
+
+function solution(priorities, location, result = 0) {
+  const queue = priorities.map((p, i) => ({ priority: p, index: i }));
+
+  while (queue.length > 0) {
+    const current = queue.shift();
+    const higherPriority = queue.some((d) => d.priority > current.priority);
+
+    if (higherPriority) {
+      queue.push(current);
+      continue;
+    }
+    result += 1;
+    if (current.index === location) {
+      return result;
+    }
+  }
+}
+
