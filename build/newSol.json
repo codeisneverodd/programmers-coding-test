@@ -1,0 +1,27 @@
+{ "author": "codeisneverodd", "code": "function solution(n, t, m, timetable) {
+  const hhmmToMin = (hhmm) => {
+    const [h, m] = hhmm.split(':').map((v) => +v);
+    return h * 60 + m;
+  };
+
+  const minToHHMM = (min) => {
+    const hh = ('' + Math.floor(min / 60)).padStart(2, '0');
+    const mm = ('' + (min % 60)).padStart(2, '0');
+    return `${hh}:${mm}`;
+  };
+
+  let clock = hhmmToMin('09:00');
+  let waiting = timetable.map((t) => hhmmToMin(t)).sort((a, b) => a - b);
+
+  for (let bus = 0; bus < n - 1; bus++) {
+    const possible = waiting.filter((time) => time <= clock).length;
+    const boarding = possible >= m ? m : possible;
+    waiting = waiting.slice(boarding);
+    clock += t;
+  }
+
+  waiting = waiting.filter((time) => time <= clock);
+  const answer = waiting.length >= m ? waiting[m - 1] - 1 : clock;
+  return minToHHMM(answer);
+}
+", "probId": "" }

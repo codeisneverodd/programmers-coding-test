@@ -21,6 +21,7 @@
     "@types/node": "^18.11.18",
     "axios": "^1.1.2",
     "cheerio": "^1.0.0-rc.10",
+    "nanoid": "^4.0.0",
     "node-fetch": "^3.2.3",
     "prettier": "^2.7.1",
     "ts-node": "^10.9.1",
