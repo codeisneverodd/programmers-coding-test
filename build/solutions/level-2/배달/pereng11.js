@@ -129,4 +129,3 @@ function solution ( N, road, K )
   const answer = djikstra( 1 );
   return answer;
 }
-

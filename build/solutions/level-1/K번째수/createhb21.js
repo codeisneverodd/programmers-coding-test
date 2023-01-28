@@ -1,4 +1,3 @@
-
 function solution(array, commands) {
   let answer = [];
   for (let i = 0; i < commands.length; i++) {
@@ -8,4 +7,3 @@ function solution(array, commands) {
   }
   return answer;
 }
-

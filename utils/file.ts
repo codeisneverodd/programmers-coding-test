@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import path, { dirname } from 'path';
+import { rimrafSync } from 'rimraf';
 
 import { fileURLToPath } from 'url';
 
@@ -30,4 +31,11 @@ export const readFile = (_path: string) => {
 /** build 폴더 기준 절대경로를 사용하세요 */
 export const readDir = (dirName: string) => {
   return fs.readdirSync(path.join(__dirname, '../', dirName));
+};
+
+/** build 폴더 기준 절대경로를 사용하세요 */
+export const deleteDir = (dirName: string) => {
+  return rimrafSync(path.join(__dirname, '../', dirName), {
+    preserveRoot: false,
+  });
 };

@@ -19,4 +19,3 @@ function solution(priorities, location) {
     }
     return answer
 }
-

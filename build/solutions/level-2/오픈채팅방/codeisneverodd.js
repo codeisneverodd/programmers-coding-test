@@ -12,4 +12,3 @@ function solution(record) {
     })
     return answer;
 }
-

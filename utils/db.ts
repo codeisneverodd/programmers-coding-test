@@ -1,25 +1,31 @@
 import { nanoid } from 'nanoid';
 import { makeDir, readFile, writeFile } from './file.js';
 
-type Prob = {
+export interface Prob {
   id: string;
   title: string;
   level: 0 | 1 | 2 | 3 | 4 | 5;
-};
+}
 
-interface Sol {
+export interface Sol {
   id: string;
   probId: string;
   code: string;
   author: string;
 }
 
-export const getDB = () => JSON.parse(readFile('results/db.json')) as { sols: Sol[]; probs: Prob[] };
-export const writeDB = (content: { probs: Prob[]; sols: Sol[] }) =>
+export interface DB {
+  probs: Prob[];
+  sols: Sol[];
+}
+
+export const getDB = () => JSON.parse(readFile('db/db.json')) as DB;
+
+export const writeDB = (db: DB) =>
   writeFile({
-    dirName: 'results',
+    dirName: 'db',
     fileName: `db.json`,
-    content: JSON.stringify(content),
+    content: JSON.stringify(db),
   });
 
 /** Sol 하나를 DB 및 파일에 추가 */
@@ -57,8 +63,8 @@ export const addSol = ({ author, code, probId }: Omit<Sol, 'id'>) => {
 };
 
 /** DB 전체를 파일로 변환 */
-export const dbToFile = () => {
-  const { sols } = getDB();
+export const dbToFile = (db: DB) => {
+  const { sols } = db;
 
   sols.forEach((sol) => addSol(sol));
 };

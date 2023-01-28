@@ -5,4 +5,3 @@ function solution(nums) {
 
   return unique.length > nums.length / 2 ? nums.length / 2 : unique.length;
 }
-

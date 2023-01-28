@@ -12,4 +12,3 @@ function solution(a, b) {
 
   return week[sum % 7]; //1일이 금요일이므로, 0이면 목요일이 출력되어야 한다.
 }
-

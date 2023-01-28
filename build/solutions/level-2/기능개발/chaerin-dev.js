@@ -23,4 +23,3 @@ function solution(progresses, speeds) {
   // 정답 반환
   return answer;
 }
-

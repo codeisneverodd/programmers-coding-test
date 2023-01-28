@@ -18,4 +18,3 @@ function solution(N, stages) {
   answer = sortedRate.map((stage) => stage[1]);
   return answer;
 }
-

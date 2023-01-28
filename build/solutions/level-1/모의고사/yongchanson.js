@@ -18,4 +18,3 @@ function solution(answers) {
 
   return answer;
 }
-

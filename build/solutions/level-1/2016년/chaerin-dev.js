@@ -9,4 +9,3 @@ function solution(a, b) {
   passedDays += b - 1;
   return week[(5 + passedDays) % 7];
 }
-

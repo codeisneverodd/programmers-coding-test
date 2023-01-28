@@ -34,4 +34,3 @@ function solution(n, lost, reserve) {
   // 체육복 1개 이상을 가진 학생들의 수 반환
   return students.filter((v) => v >= 1).length;
 }
-

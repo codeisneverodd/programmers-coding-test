@@ -18,4 +18,3 @@ function solution(record) {
     }
     return answer.map(ele => map.get(ele[0]) + ele[1]);
 }
-

@@ -8,4 +8,3 @@ function solution(s) {
     for (const set of sets) answer.push(...set.filter(x => !answer.includes(x)))
     return answer;
 }
-

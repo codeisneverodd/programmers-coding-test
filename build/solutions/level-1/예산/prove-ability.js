@@ -13,4 +13,3 @@ function solution(d, budget) {
     
     return count;
 }
-

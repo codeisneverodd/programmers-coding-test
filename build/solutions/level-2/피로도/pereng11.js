@@ -20,6 +20,3 @@ function getMaxCount(currentFatigue, visitedCount, dungeons) {
 
   return maxCount;
 }
-
-
-

@@ -22,4 +22,3 @@ function solution(progresses, speeds) {
     answer.push(queue.length);
     return answer;
   }
-

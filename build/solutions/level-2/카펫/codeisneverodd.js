@@ -10,4 +10,3 @@ function widthHeightPair(size) {
     for (let i = 1; i <= Math.sqrt(size); i++) if (size % i === 0) result.push([size / i, i])
     return result
 }
-

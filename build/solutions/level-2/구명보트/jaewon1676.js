@@ -14,4 +14,3 @@ function solution(people, limit) {
   }
   return cnt;
 } // 4주차 2번 문제와 유사함
-

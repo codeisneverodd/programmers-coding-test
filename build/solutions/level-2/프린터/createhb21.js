@@ -15,5 +15,4 @@ function solution(priorities, location) {
     }
     const idx = queue.findIndex(p => p.index === location) + 1;
     return idx;
-  }  
-
+  }

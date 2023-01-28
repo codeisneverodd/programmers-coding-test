@@ -20,4 +20,3 @@ function solution(people, limit) {
   
   return count;
 }
-
