@@ -31,3 +31,73 @@
 해당 Repository의 해답을 자신의 저작물에 추가할 수 있지만 **반드시** 본 Repository의
 주소 `https://github.com/codeisneverodd/programmers-coding-test`
 를 명시하여야합니다.
+
+## 📃 Types and Example
+저와 같이 우리 레포의 데이터를 활용하고 싶으신 분들을 위해 타입과 간단한 예제를 남겨놓을게요!
+
+### Fetch 예제
+axios나 tanstack query 등 라이브러리 사용에 익숙하지 않거나 TypeScript에 익숙하지 않은 분들을 위한 간단한 예제에요.
+```js
+const DATA_ENDPOINT =
+  "https://raw.githubusercontent.com/codeisneverodd/programmers-coding-test/main-v2/data";
+
+export const getProbs = async () => {
+  const res = await fetch(`${DATA_ENDPOINT}/problems.json`);
+  return res.json();
+};
+
+export const getSols = async () => {
+  const res = await fetch(`${DATA_ENDPOINT}/solutions.json`);
+  return res.json();
+};
+
+```
+
+
+### TypeScript & Tanstack Query(React Query) 예제
+우리 레포에서 오는 값을 사용할 수 있는 custom hook 인 `useRepo`를 만드는 예제에요.
+
+```ts
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+
+const DATA_ENDPOINT =
+  "https://raw.githubusercontent.com/codeisneverodd/programmers-coding-test/main-v2/data";
+
+export default function useRepo() {
+  const probsQuery = useQuery({
+    queryKey: ["repo", "sols"],
+    queryFn: async () => {
+      const res = await axios.get<Sol[]>(`${DATA_ENDPOINT}/problems.json`);
+      return res.data;
+    }
+  });
+  const solsQuery = useQuery({
+    queryKey: ["repo", "probs"],
+    queryFn: async () => {
+      const res = await axios.get<Prob[]>(`${DATA_ENDPOINT}/solutions.json`);
+      return res.data;
+    }
+  });
+
+  return { probsQuery, solsQuery };
+}
+
+export type Prob = {
+  id: string;
+  title: string;
+  solvedCount: number;
+};
+
+export type Sol = {
+  id: string;
+  author: string;
+  code: string;
+  probId: string;
+  createdAt: ReturnType<typeof Date.now>;
+  lang: Lang;
+};
+
+export type Lang = "JavaScript" | "Python";
+
+```
