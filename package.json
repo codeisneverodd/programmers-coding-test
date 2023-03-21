@@ -1,38 +1,52 @@
 {
-  "name": "programmers-coding-test",
-  "version": "1.0.0",
-  "description": "🌱 프로그래머스의 [코딩테스트 문제]",
-  "type": "module",
+  "name": "solution-pass-search",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "node ./utils/build.js",
-    "prepare": "husky install"
+    "dev": "next dev -p 3003",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint && tsc --noemit",
+    "prepare": "husky install",
+    "pre-commit": "yarn lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codeisneverodd/programmers-coding-test.git"
-  },
-  "author": "cruelladevil <dev.timetravel@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codeisneverodd/programmers-coding-test/issues"
-  },
-  "homepage": "https://github.com/codeisneverodd/programmers-coding-test#readme",
   "dependencies": {
-    "@types/node": "^18.11.18",
-    "axios": "^1.1.2",
-    "cheerio": "^1.0.0-rc.10",
-    "nanoid": "^4.0.0",
-    "node-fetch": "^3.2.3",
-    "prettier": "^2.7.1",
-    "rimraf": "^4.1.2",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.4"
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@tanstack/react-query": "^4.28.0",
+    "@tanstack/react-query-devtools": "^4.28.0",
+    "@types/node": "18.14.2",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "axios": "^1.3.4",
+    "cheerio": "^1.0.0-rc.12",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.1",
+    "framer-motion": "^10.0.0",
+    "nanoid": "^4.0.1",
+    "next": "13.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "recoil": "^0.7.7",
+    "typescript": "4.9.5"
   },
   "devDependencies": {
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3"
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.4"
   }
 }
