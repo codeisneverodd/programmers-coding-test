@@ -20,9 +20,9 @@ export default function Home() {
       {probQuery.data && (
         <>
           <Text fontWeight="bold">문제 수 : {probQuery.data.length}</Text>
-          {probQuery.data.map(({ title, id }) => (
+          {probQuery.data.map(({ title, id, solvedCount }) => (
             <Flex key={id}>
-              {title} | {id}
+              {title} | {id} | {solvedCount}
             </Flex>
           ))}
         </>

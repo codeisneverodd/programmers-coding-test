@@ -15,17 +15,26 @@ export default async function handler(
       `${jsonDirectory}/problems.json`,
       "utf-8"
     );
-    res.status(200).json(JSON.parse(fileContents) as unknown as Prob[]);
+    const probs = JSON.parse(fileContents) as unknown as Prob[];
+
+    res.status(200).json(probs);
   }
   if (req.method === "POST") {
     const $ = cheerio.load(await (await fetch(COURSE_URL)).text());
     const probs: Prob[] = [];
+    const sols = JSON.parse(
+      await fs.readFile(`${jsonDirectory}/solutions.json`, "utf-8")
+    );
 
     $(".lesson-title").each((i, $node) => {
       const title = $($node).children("span").text().trim();
       const link = $($node).attr("href");
       const id = link?.split("/").at(-1) ?? "";
-      probs.push({ title, id });
+      probs.push({
+        title,
+        id,
+        solvedCount: sols.filter((sol: any) => sol.probId === id).length
+      });
     });
 
     await fs.writeFile(
@@ -40,8 +49,9 @@ export default async function handler(
       `${jsonDirectory}/problems.json`,
       "utf-8"
     );
+
     res.status(200).json(JSON.parse(fileContents) as unknown as Prob[]);
   }
 }
 
-export type Prob = { id: string; title: string };
+export type Prob = { id: string; title: string; solvedCount: number };
