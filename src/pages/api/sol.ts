@@ -18,7 +18,7 @@ export default async function handler(
   }
 
   if (req.method === "POST") {
-    const newSols: Pick<Sol, "author" | "code" | "probId" | "lang"> = req.body;
+    const newSols: PostSolReqBody = req.body;
 
     const sols = JSON.parse(
       await fs.readFile(`${jsonDirectory}/solutions.json`, "utf-8")
@@ -29,7 +29,7 @@ export default async function handler(
       author: newSols.author,
       code: newSols.code,
       probId: newSols.probId,
-      createdAt: Date.now(),
+      createdAt: +newSols.createdAt,
       lang: newSols.lang
     });
 
@@ -72,3 +72,5 @@ export type Sol = {
   createdAt: ReturnType<typeof Date.now>;
   lang: "JavaScript" | "Python";
 };
+
+export type PostSolReqBody = Omit<Sol, "id">;

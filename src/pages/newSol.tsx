@@ -2,6 +2,7 @@ import MainLayout from "@/lib/@components/MainLayout";
 import useSols from "@/lib/@hooks/useSols";
 import { Button, Flex, Text, Textarea } from "@chakra-ui/react";
 import { useState } from "react";
+import { PostSolReqBody } from "./api/sol";
 
 export default function NewSol() {
   const [solutionInfo, setSolutionInfo] = useState("");
@@ -12,7 +13,12 @@ export default function NewSol() {
   const checkValid = () => {
     try {
       const info = JSON.parse(solutionInfo);
-      const valid = info.probId && info.author && solCode !== "";
+      const valid =
+        info.probId &&
+        info.author &&
+        info.lang &&
+        info.createdAt &&
+        solCode !== "";
       setIsValid(valid);
       return valid;
     } catch (e) {
@@ -23,11 +29,13 @@ export default function NewSol() {
 
   const handleSumbit = () => {
     if (checkValid()) {
-      const info = JSON.parse(solutionInfo);
+      const info = JSON.parse(solutionInfo) as PostSolReqBody;
       addSolMutaiton.mutate(
         {
           author: info.author,
           probId: info.probId,
+          lang: info.lang,
+          createdAt: info.createdAt,
           code: solCode
         },
         {
@@ -54,17 +62,6 @@ export default function NewSol() {
             문제 추가
           </Button>
         </Flex>
-        <Text fontSize="xl">풀이 데이터</Text>
-        <Textarea
-          h="120px"
-          placeholder="probId, author in json format"
-          value={solutionInfo}
-          onChange={e => {
-            setSolutionInfo(e.target.value);
-          }}
-          onBlur={checkValid}
-        />
-
         <Text fontSize="xl">제출한 정답</Text>
         <Textarea
           placeholder="function()"
@@ -74,6 +71,16 @@ export default function NewSol() {
           }}
           onBlur={checkValid}
           h="400px"
+        />
+        <Text fontSize="xl">풀이 데이터</Text>
+        <Textarea
+          h="120px"
+          placeholder="probId, author, lang, createdAt in json format"
+          value={solutionInfo}
+          onChange={e => {
+            setSolutionInfo(e.target.value);
+          }}
+          onBlur={checkValid}
         />
       </Flex>
     </MainLayout>

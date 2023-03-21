@@ -1,4 +1,4 @@
-import { Sol } from "@/pages/api/sol";
+import { PostSolReqBody, Sol } from "@/pages/api/sol";
 import { useToast } from "@chakra-ui/react";
 import { QueryClient, useMutation, useQuery } from "@tanstack/react-query";
 import axios from "axios";
@@ -24,7 +24,7 @@ export default function useSols() {
   });
 
   const addSolMutaiton = useMutation({
-    mutationFn: async (sol: Pick<Sol, "author" | "code" | "probId">) => {
+    mutationFn: async (sol: PostSolReqBody) => {
       await axios.post<Sol[]>("/api/sol", sol, {
         headers: {
           "Content-Type": "application/json"
