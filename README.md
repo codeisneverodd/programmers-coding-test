@@ -23,7 +23,7 @@
 
 ## 💡 Solutions
 
-문제 업로드 방식 개선과 저답 관리를 위해 **기존 README 방식에서 [🔎 검색 사이트](https://codeisneverodd.com/solution-pass)에서 검색하는 방식으로** 바뀌었어요!
+문제 업로드 방식 개선과 정답 관리를 위해 **기존 README 방식에서 [🔎 검색 사이트](https://codeisneverodd.com/solution-pass)에서 검색하는 방식으로** 바뀌었어요!
 
 ## 👉 저작권
 
