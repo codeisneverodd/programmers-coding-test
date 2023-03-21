@@ -23,7 +23,8 @@
 
 ## 💡 Solutions
 
-문제 업로드 방식 개선과 정답 관리를 위해 **기존 README 방식에서 [🔎 검색 사이트](https://codeisneverodd.com/solution-pass)에서 검색하는 방식으로** 바뀌었어요!
+- 문제 업로드 방식 개선과 정답 관리를 위해 **기존 README 방식에서 [🔎 검색 사이트](https://codeisneverodd.com/solution-pass)에서 검색하는 방식으로** 바뀌었어요!
+- 문제 목록과 정답은 [이 파일들](https://github.com/codeisneverodd/programmers-coding-test/tree/main-v2/data)로 관리되고 있어요. GitHub API를 이용해서 해당 파일을 자유롭게 사용해도 좋아요! 단, 코드를 보여주는 경우 반드시 아래 저작권을 따라주세요.
 
 ## 👉 저작권
 
