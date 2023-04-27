@@ -10,7 +10,7 @@
 
 - 🌱 다양한 사람의 프로그래머스의 코딩테스트 정답이 올라와있어요!
 - ✅ 프로그래머스는 정답을 통과시키면 다른 사람들의 풀이를 볼 수 있어요!
-- [🔎 검색 사이트](https://codeisneverodd.com/solution-pass) 를 통해 간편하게 검색하고 풀이를 올릴 수 있어요!
+- [🔎 검색 사이트](https://codeisneverodd-home.vercel.app/solution-pass) 를 통해 간편하게 검색하고 풀이를 올릴 수 있어요!
 - ⭐ **도움이 되셨다면** 오른쪽 상단 ↗ 의 ⭐️ **Star를 클릭**해 이 프로젝트를 응원해주세요!
 
 ## 🤔 다른 사람의 풀이가 왜 중요한가요?
@@ -23,7 +23,7 @@
 
 ## 💡 Solutions
 
-- 문제 업로드 방식 개선과 정답 관리를 위해 **기존 README 방식에서 [🔎 검색 사이트](https://codeisneverodd.com/solution-pass)에서 검색하는 방식으로** 바뀌었어요!
+- 문제 업로드 방식 개선과 정답 관리를 위해 **기존 README 방식에서 [🔎 검색 사이트](https://codeisneverodd-home.vercel.app/solution-pass)에서 검색하는 방식으로** 바뀌었어요!
 - 문제 목록과 정답은 [이 파일들](https://github.com/codeisneverodd/programmers-coding-test/tree/main-v2/data)로 관리되고 있어요. GitHub API를 이용해서 해당 파일을 자유롭게 사용해도 좋아요! 단, 코드를 보여주는 경우 반드시 아래 저작권을 따라주세요.
 
 ## 👉 저작권
