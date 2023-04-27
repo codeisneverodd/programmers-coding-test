@@ -2,7 +2,7 @@
 
 [![방문자수](<https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/codeisneverodd/programmers-coding-test&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=방문자수(Today/Total)&edge_flat=true>)](https://github.com/codeisneverodd)
 
-## 🔎 [검색 사이트 바로가기](https://codeisneverodd.com/solution-pass)
+## 🔎 [검색 사이트 바로가기](https://codeisneverodd-home.vercel.app/solution-pass)
 
 > 검색 사이트의 코드는 [이 저장소](https://github.com/codeisneverodd/home)에 공개되어 있어요
 
